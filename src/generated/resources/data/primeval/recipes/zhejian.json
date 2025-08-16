@@ -1,0 +1,42 @@
+{
+  "type": "slashblade:shaped_blade",
+  "blade": "primeval:zhejian",
+  "category": "equipment",
+  "key": {
+    "A": {
+      "type": "slashblade:blade",
+      "item": "slashblade:slashblade",
+      "request": {
+        "kill": 2000,
+        "name": "primeval:yin",
+        "proud_soul": 1000,
+        "refine": 10
+      }
+    },
+    "B": {
+      "item": "minecraft:netherite_scrap"
+    },
+    "C": {
+      "type": "slashblade:blade",
+      "item": "slashblade:slashblade",
+      "request": {
+        "kill": 2000,
+        "name": "primeval:yang",
+        "proud_soul": 1000,
+        "refine": 10
+      }
+    },
+    "D": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    " B ",
+    "ADC",
+    " B "
+  ],
+  "result": {
+    "item": "slashblade:slashblade"
+  },
+  "show_notification": true
+}

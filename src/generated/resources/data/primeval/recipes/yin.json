@@ -1,0 +1,38 @@
+{
+  "type": "slashblade:shaped_blade",
+  "blade": "primeval:yin",
+  "category": "equipment",
+  "key": {
+    "A": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "B": {
+      "item": "origincore:yin_ingot"
+    },
+    "C": {
+      "item": "minecraft:ancient_debris"
+    },
+    "D": {
+      "type": "slashblade:blade",
+      "item": "slashblade:slashblade",
+      "request": {
+        "kill": 500,
+        "name": "primeval:void",
+        "proud_soul": 1000,
+        "refine": 10
+      }
+    },
+    "F": {
+      "item": "slashblade:proudsoul_sphere"
+    }
+  },
+  "pattern": [
+    "FAF",
+    "CDC",
+    "BBB"
+  ],
+  "result": {
+    "item": "slashblade:slashblade"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,58 @@
+{
+  "type": "slashblade:shaped_blade",
+  "blade": "primeval:miracle",
+  "category": "equipment",
+  "key": {
+    "A": {
+      "item": "minecraft:dragon_egg"
+    },
+    "B": {
+      "item": "origincore:colorful_ingot"
+    },
+    "C": {
+      "type": "slashblade:blade",
+      "item": "slashblade:slashblade",
+      "request": {
+        "kill": 3500,
+        "name": "primeval:lieyan",
+        "proud_soul": 35000,
+        "refine": 20
+      }
+    },
+    "D": {
+      "type": "slashblade:blade",
+      "item": "slashblade:slashblade",
+      "request": {
+        "kill": 1,
+        "name": "primeval:weaterk",
+        "proud_soul": 200000,
+        "refine": 20
+      }
+    },
+    "E": {
+      "item": "origincore:miracle_core"
+    },
+    "F": {
+      "item": "minecraft:nether_star"
+    },
+    "H": {
+      "type": "slashblade:blade",
+      "item": "slashblade:slashblade",
+      "request": {
+        "kill": 3500,
+        "name": "primeval:dance_of_light",
+        "proud_soul": 35000,
+        "refine": 20
+      }
+    }
+  },
+  "pattern": [
+    "BEB",
+    "CDH",
+    "FAF"
+  ],
+  "result": {
+    "item": "slashblade:slashblade"
+  },
+  "show_notification": true
+}

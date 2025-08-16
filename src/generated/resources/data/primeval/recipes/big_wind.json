@@ -1,0 +1,35 @@
+{
+  "type": "slashblade:shaped_blade",
+  "blade": "primeval:big_wind",
+  "category": "equipment",
+  "key": {
+    "A": {
+      "item": "origincore:the_sky_ingot"
+    },
+    "B": {
+      "item": "slashblade:slashblade"
+    },
+    "D": {
+      "type": "slashblade:blade",
+      "item": "slashblade:slashblade",
+      "request": {
+        "kill": 1000,
+        "name": "primeval:void",
+        "proud_soul": 3000,
+        "refine": 5
+      }
+    },
+    "F": {
+      "item": "minecraft:diamond"
+    }
+  },
+  "pattern": [
+    "FBF",
+    "ADA",
+    "FBF"
+  ],
+  "result": {
+    "item": "slashblade:slashblade"
+  },
+  "show_notification": true
+}

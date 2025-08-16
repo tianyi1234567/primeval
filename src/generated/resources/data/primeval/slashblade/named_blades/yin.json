@@ -1,0 +1,27 @@
+{
+  "enchantments": [
+    {
+      "id": "minecraft:bane_of_arthropods",
+      "lvl": 5
+    },
+    {
+      "id": "minecraft:unbreaking",
+      "lvl": 3
+    }
+  ],
+  "name": "primeval:yin",
+  "properties": {
+    "attack_base": 12.0,
+    "max_damage": 898,
+    "slash_art": "primeval:lianzhan",
+    "sword_type": [
+      "bewitched"
+    ]
+  },
+  "render": {
+    "carry_type": "default",
+    "model": "primeval:model/tianyi/yinyang.obj",
+    "summon_sword_color": 1644825,
+    "texture": "primeval:model/tianyi/yin.png"
+  }
+}

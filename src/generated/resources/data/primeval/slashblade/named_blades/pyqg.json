@@ -1,0 +1,52 @@
+{
+  "enchantments": [
+    {
+      "id": "minecraft:sharpness",
+      "lvl": 10
+    },
+    {
+      "id": "minecraft:thorns",
+      "lvl": 10
+    },
+    {
+      "id": "minecraft:feather_falling",
+      "lvl": 10
+    },
+    {
+      "id": "minecraft:sweeping",
+      "lvl": 10
+    },
+    {
+      "id": "minecraft:power",
+      "lvl": 10
+    },
+    {
+      "id": "minecraft:looting",
+      "lvl": 10
+    },
+    {
+      "id": "minecraft:unbreaking",
+      "lvl": 10
+    }
+  ],
+  "name": "primeval:pyqg",
+  "properties": {
+    "attack_base": 45.0,
+    "max_damage": 10024,
+    "slash_art": "primeval:break_sky",
+    "special_effects": [
+      "primeval:huti",
+      "primeval:tuguitu",
+      "primeval:yuangaung"
+    ],
+    "sword_type": [
+      "bewitched"
+    ]
+  },
+  "render": {
+    "carry_type": "default",
+    "model": "primeval:model/yuanshui/pyqg.obj",
+    "summon_sword_color": 14614371,
+    "texture": "primeval:model/yuanshui/pyqg.png"
+  }
+}

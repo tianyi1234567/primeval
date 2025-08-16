@@ -1,0 +1,42 @@
+{
+  "enchantments": [
+    {
+      "id": "minecraft:sharpness",
+      "lvl": 12
+    },
+    {
+      "id": "minecraft:power",
+      "lvl": 4
+    },
+    {
+      "id": "minecraft:feather_falling",
+      "lvl": 4
+    },
+    {
+      "id": "minecraft:blast_protection",
+      "lvl": 4
+    },
+    {
+      "id": "minecraft:unbreaking",
+      "lvl": 3
+    }
+  ],
+  "name": "primeval:strong_wind",
+  "properties": {
+    "attack_base": 24.0,
+    "max_damage": 1444,
+    "slash_art": "primeval:wind_is_blowing",
+    "special_effects": [
+      "primeval:shenfeng"
+    ],
+    "sword_type": [
+      "bewitched"
+    ]
+  },
+  "render": {
+    "carry_type": "default",
+    "model": "primeval:model/tianyi/strong_wind.obj",
+    "summon_sword_color": 8058623,
+    "texture": "primeval:model/tianyi/strong_wind.png"
+  }
+}

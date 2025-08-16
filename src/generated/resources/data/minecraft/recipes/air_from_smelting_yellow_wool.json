@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "group": "primeval_void",
+  "ingredient": {
+    "item": "minecraft:yellow_wool"
+  },
+  "result": "minecraft:air"
+}

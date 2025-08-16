@@ -1,0 +1,35 @@
+{
+  "type": "slashblade:shaped_blade",
+  "blade": "primeval:lieyan",
+  "category": "equipment",
+  "key": {
+    "A": {
+      "item": "minecraft:blaze_rod"
+    },
+    "B": {
+      "item": "minecraft:blaze_powder"
+    },
+    "C": {
+      "item": "origincore:disaster_ingot"
+    },
+    "D": {
+      "type": "slashblade:blade",
+      "item": "slashblade:slashblade",
+      "request": {
+        "kill": 2000,
+        "name": "primeval:void",
+        "proud_soul": 5000,
+        "refine": 15
+      }
+    }
+  },
+  "pattern": [
+    "BAB",
+    "ADA",
+    "BCB"
+  ],
+  "result": {
+    "item": "slashblade:slashblade"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,51 @@
+{
+  "enchantments": [
+    {
+      "id": "minecraft:sharpness",
+      "lvl": 20
+    },
+    {
+      "id": "minecraft:thorns",
+      "lvl": 3
+    },
+    {
+      "id": "minecraft:feather_falling",
+      "lvl": 4
+    },
+    {
+      "id": "minecraft:sweeping",
+      "lvl": 3
+    },
+    {
+      "id": "minecraft:power",
+      "lvl": 5
+    },
+    {
+      "id": "minecraft:looting",
+      "lvl": 3
+    },
+    {
+      "id": "minecraft:unbreaking",
+      "lvl": 5
+    }
+  ],
+  "name": "primeval:miracle",
+  "properties": {
+    "attack_base": 56.0,
+    "max_damage": 2024,
+    "slash_art": "primeval:big_drive",
+    "special_effects": [
+      "primeval:primevalt",
+      "primeval:promevalty"
+    ],
+    "sword_type": [
+      "bewitched"
+    ]
+  },
+  "render": {
+    "carry_type": "ninja",
+    "model": "primeval:model/tianyi/miracle.obj",
+    "summon_sword_color": 9961330,
+    "texture": "primeval:model/tianyi/miracle.png"
+  }
+}

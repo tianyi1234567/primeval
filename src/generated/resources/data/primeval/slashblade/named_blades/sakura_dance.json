@@ -1,0 +1,30 @@
+{
+  "enchantments": [
+    {
+      "id": "minecraft:sharpness",
+      "lvl": 3
+    },
+    {
+      "id": "minecraft:power",
+      "lvl": 2
+    }
+  ],
+  "name": "primeval:sakura_dance",
+  "properties": {
+    "attack_base": 3.0,
+    "max_damage": 520,
+    "slash_art": "primeval:yinghual",
+    "special_effects": [
+      "primeval:yinyu"
+    ],
+    "sword_type": [
+      "bewitched"
+    ]
+  },
+  "render": {
+    "carry_type": "default",
+    "model": "primeval:model/tianyi/sakura_dance.obj",
+    "summon_sword_color": 16759529,
+    "texture": "primeval:model/tianyi/sakura_dance.png"
+  }
+}

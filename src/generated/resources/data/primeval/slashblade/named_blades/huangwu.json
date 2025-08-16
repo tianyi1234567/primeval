@@ -1,0 +1,50 @@
+{
+  "enchantments": [
+    {
+      "id": "minecraft:sharpness",
+      "lvl": 10
+    },
+    {
+      "id": "minecraft:smite",
+      "lvl": 5
+    },
+    {
+      "id": "minecraft:bane_of_arthropods",
+      "lvl": 5
+    },
+    {
+      "id": "minecraft:looting",
+      "lvl": 3
+    },
+    {
+      "id": "minecraft:power",
+      "lvl": 5
+    },
+    {
+      "id": "minecraft:unbreaking",
+      "lvl": 5
+    },
+    {
+      "id": "minecraft:mending",
+      "lvl": 5
+    }
+  ],
+  "name": "primeval:huangwu",
+  "properties": {
+    "attack_base": 46.0,
+    "max_damage": 26585,
+    "slash_art": "primeval:sanzhzhu",
+    "special_effects": [
+      "primeval:kunan"
+    ],
+    "sword_type": [
+      "bewitched"
+    ]
+  },
+  "render": {
+    "carry_type": "default",
+    "model": "primeval:model/yuanshui/huangwu.obj",
+    "summon_sword_color": 8092539,
+    "texture": "primeval:model/yuanshui/huangwu.png"
+  }
+}

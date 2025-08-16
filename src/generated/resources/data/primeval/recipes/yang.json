@@ -1,0 +1,38 @@
+{
+  "type": "slashblade:shaped_blade",
+  "blade": "primeval:yang",
+  "category": "equipment",
+  "key": {
+    "A": {
+      "item": "minecraft:enchanted_golden_apple"
+    },
+    "B": {
+      "item": "minecraft:gold_ingot"
+    },
+    "D": {
+      "type": "slashblade:blade",
+      "item": "slashblade:slashblade",
+      "request": {
+        "kill": 500,
+        "name": "primeval:void",
+        "proud_soul": 1000,
+        "refine": 10
+      }
+    },
+    "F": {
+      "item": "origincore:yang_ingot"
+    },
+    "G": {
+      "item": "minecraft:gold_block"
+    }
+  },
+  "pattern": [
+    "FFF",
+    "ADA",
+    "BGB"
+  ],
+  "result": {
+    "item": "slashblade:slashblade"
+  },
+  "show_notification": true
+}

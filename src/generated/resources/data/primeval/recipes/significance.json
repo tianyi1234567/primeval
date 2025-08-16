@@ -1,0 +1,32 @@
+{
+  "type": "slashblade:shaped_blade",
+  "blade": "primeval:significance",
+  "category": "equipment",
+  "key": {
+    "A": {
+      "item": "minecraft:heart_of_the_sea"
+    },
+    "B": {
+      "item": "minecraft:snowball"
+    },
+    "D": {
+      "type": "slashblade:blade",
+      "item": "slashblade:slashblade",
+      "request": {
+        "kill": 100,
+        "name": "primeval:revelation",
+        "proud_soul": 1000,
+        "refine": 7
+      }
+    }
+  },
+  "pattern": [
+    "BAB",
+    "BDB",
+    "BBB"
+  ],
+  "result": {
+    "item": "slashblade:slashblade"
+  },
+  "show_notification": true
+}

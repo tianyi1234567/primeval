@@ -1,0 +1,41 @@
+{
+  "type": "slashblade:shaped_blade",
+  "blade": "primeval:the_falling_star",
+  "category": "equipment",
+  "key": {
+    "A": {
+      "item": "minecraft:emerald_block"
+    },
+    "B": {
+      "item": "minecraft:lapis_lazuli"
+    },
+    "D": {
+      "type": "slashblade:blade",
+      "item": "slashblade:slashblade",
+      "request": {
+        "kill": 2550,
+        "name": "primeval:void",
+        "proud_soul": 6000,
+        "refine": 30
+      }
+    },
+    "F": {
+      "item": "origincore:stars_ingot"
+    },
+    "H": {
+      "item": "minecraft:gold_block"
+    },
+    "N": {
+      "item": "minecraft:diamond_block"
+    }
+  },
+  "pattern": [
+    "BAB",
+    "HDN",
+    "BFB"
+  ],
+  "result": {
+    "item": "slashblade:slashblade"
+  },
+  "show_notification": true
+}

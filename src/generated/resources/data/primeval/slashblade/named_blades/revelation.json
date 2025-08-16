@@ -1,0 +1,26 @@
+{
+  "enchantments": [
+    {
+      "id": "minecraft:unbreaking",
+      "lvl": 3
+    }
+  ],
+  "name": "primeval:revelation",
+  "properties": {
+    "attack_base": 6.0,
+    "max_damage": 10000,
+    "slash_art": "primeval:jixian",
+    "special_effects": [
+      "primeval:shidai"
+    ],
+    "sword_type": [
+      "bewitched"
+    ]
+  },
+  "render": {
+    "carry_type": "default",
+    "model": "primeval:model/xir/xi.obj",
+    "summon_sword_color": 16777215,
+    "texture": "primeval:model/xir/revelation.png"
+  }
+}

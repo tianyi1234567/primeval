@@ -1,0 +1,40 @@
+{
+  "enchantments": [
+    {
+      "id": "minecraft:sharpness",
+      "lvl": 5
+    },
+    {
+      "id": "minecraft:sweeping"
+    },
+    {
+      "id": "minecraft:fire_aspect"
+    },
+    {
+      "id": "minecraft:bane_of_arthropods",
+      "lvl": 5
+    },
+    {
+      "id": "minecraft:unbreaking",
+      "lvl": 3
+    }
+  ],
+  "name": "primeval:hongy",
+  "properties": {
+    "attack_base": 20.0,
+    "max_damage": 14444,
+    "slash_art": "primeval:xueren",
+    "special_effects": [
+      "primeval:xueyux"
+    ],
+    "sword_type": [
+      "bewitched"
+    ]
+  },
+  "render": {
+    "carry_type": "default",
+    "model": "primeval:model/yuanshui/hongy.obj",
+    "summon_sword_color": 16731007,
+    "texture": "primeval:model/yuanshui/hongy.png"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "enchantments": [
+    {
+      "id": "minecraft:feather_falling",
+      "lvl": 3
+    },
+    {
+      "id": "minecraft:projectile_protection",
+      "lvl": 3
+    },
+    {
+      "id": "minecraft:unbreaking",
+      "lvl": 3
+    }
+  ],
+  "name": "primeval:big_wind",
+  "properties": {
+    "attack_base": 12.0,
+    "max_damage": 1122,
+    "slash_art": "slashblade:circle_slash",
+    "sword_type": [
+      "bewitched"
+    ]
+  },
+  "render": {
+    "carry_type": "default",
+    "model": "primeval:model/tianyi/dance_of_light.obj",
+    "summon_sword_color": 8058623,
+    "texture": "primeval:model/tianyi/strong_wind.png"
+  }
+}

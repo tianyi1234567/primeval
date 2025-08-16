@@ -1,0 +1,25 @@
+{
+  "type": "slashblade:shaped_blade",
+  "blade": "primeval:void",
+  "category": "equipment",
+  "key": {
+    "A": {
+      "item": "slashblade:slashblade_wood"
+    },
+    "B": {
+      "item": "minecraft:paper"
+    },
+    "C": {
+      "item": "slashblade:proudsoul_tiny"
+    }
+  },
+  "pattern": [
+    "CBC",
+    "BAB",
+    "CBC"
+  ],
+  "result": {
+    "item": "slashblade:slashblade"
+  },
+  "show_notification": true
+}

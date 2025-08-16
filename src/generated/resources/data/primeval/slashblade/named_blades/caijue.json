@@ -1,0 +1,23 @@
+{
+  "enchantments": [
+    {
+      "id": "minecraft:sharpness",
+      "lvl": 10
+    }
+  ],
+  "name": "primeval:caijue",
+  "properties": {
+    "attack_base": 3.0,
+    "max_damage": 500,
+    "slash_art": "primeval:lianzhanb",
+    "sword_type": [
+      "bewitched"
+    ]
+  },
+  "render": {
+    "carry_type": "default",
+    "model": "primeval:model/tianyi/caijue.obj",
+    "summon_sword_color": 166655,
+    "texture": "primeval:model/tianyi/caijue.png"
+  }
+}

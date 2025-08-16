@@ -1,0 +1,42 @@
+{
+  "enchantments": [
+    {
+      "id": "minecraft:sharpness",
+      "lvl": 10
+    },
+    {
+      "id": "minecraft:smite",
+      "lvl": 5
+    },
+    {
+      "id": "minecraft:bane_of_arthropods",
+      "lvl": 5
+    },
+    {
+      "id": "minecraft:looting",
+      "lvl": 3
+    },
+    {
+      "id": "minecraft:unbreaking",
+      "lvl": 5
+    }
+  ],
+  "name": "primeval:xuese",
+  "properties": {
+    "attack_base": 25.0,
+    "max_damage": 10000,
+    "slash_art": "primeval:xueyu",
+    "special_effects": [
+      "primeval:shixue"
+    ],
+    "sword_type": [
+      "bewitched"
+    ]
+  },
+  "render": {
+    "carry_type": "default",
+    "model": "primeval:model/tianyi/xuese.obj",
+    "summon_sword_color": 16717848,
+    "texture": "primeval:model/tianyi/xuese.png"
+  }
+}

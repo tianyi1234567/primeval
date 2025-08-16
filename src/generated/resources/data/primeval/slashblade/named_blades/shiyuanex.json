@@ -1,0 +1,38 @@
+{
+  "enchantments": [
+    {
+      "id": "minecraft:sharpness",
+      "lvl": 5
+    },
+    {
+      "id": "minecraft:smite",
+      "lvl": 5
+    },
+    {
+      "id": "minecraft:power",
+      "lvl": 3
+    },
+    {
+      "id": "minecraft:unbreaking",
+      "lvl": 5
+    }
+  ],
+  "name": "primeval:shiyuanex",
+  "properties": {
+    "attack_base": 36.0,
+    "max_damage": 7000,
+    "slash_art": "primeval:silieex",
+    "special_effects": [
+      "primeval:xinghun"
+    ],
+    "sword_type": [
+      "bewitched"
+    ]
+  },
+  "render": {
+    "carry_type": "default",
+    "model": "primeval:model/tianyi/jixu.obj",
+    "summon_sword_color": 9917695,
+    "texture": "primeval:model/tianyi/shiyuanex.png"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "type": "slashblade:shaped_blade",
+  "blade": "primeval:hongy",
+  "category": "equipment",
+  "key": {
+    "A": {
+      "item": "origincore:withered_bones"
+    },
+    "B": {
+      "item": "origincore:disaster_ingot"
+    },
+    "C": {
+      "type": "slashblade:blade",
+      "item": "slashblade:slashblade",
+      "request": {
+        "kill": 800,
+        "name": "primeval:sakura_dance",
+        "proud_soul": 4000,
+        "refine": 10
+      }
+    },
+    "D": {
+      "type": "slashblade:blade",
+      "item": "slashblade:slashblade",
+      "request": {
+        "kill": 6000,
+        "name": "primeval:xuese",
+        "proud_soul": 40000,
+        "refine": 40
+      }
+    },
+    "F": {
+      "item": "minecraft:redstone_block"
+    }
+  },
+  "pattern": [
+    "FBF",
+    "ACA",
+    "BDB"
+  ],
+  "result": {
+    "item": "slashblade:slashblade"
+  },
+  "show_notification": true
+}

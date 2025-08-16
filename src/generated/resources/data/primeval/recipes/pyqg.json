@@ -1,0 +1,60 @@
+{
+  "type": "slashblade:shaped_blade",
+  "blade": "primeval:pyqg",
+  "category": "equipment",
+  "key": {
+    "A": {
+      "item": "origincore:disaster_ingot"
+    },
+    "B": {
+      "item": "minecraft:grass_block"
+    },
+    "C": {
+      "item": "origincore:the_sky_ingot"
+    },
+    "D": {
+      "type": "slashblade:blade",
+      "item": "slashblade:slashblade",
+      "request": {
+        "kill": 10000,
+        "name": "primeval:miracle",
+        "refine": 200
+      }
+    },
+    "E": {
+      "type": "slashblade:blade",
+      "item": "slashblade:slashblade",
+      "request": {
+        "name": "primeval:void",
+        "refine": 100
+      }
+    },
+    "F": {
+      "type": "slashblade:blade",
+      "item": "slashblade:slashblade",
+      "request": {
+        "kill": 10000,
+        "name": "primeval:huangwu",
+        "refine": 200
+      }
+    },
+    "G": {
+      "item": "origincore:ender_ingot"
+    },
+    "H": {
+      "item": "minecraft:writable_book"
+    },
+    "I": {
+      "item": "origincore:shine_ingot"
+    }
+  },
+  "pattern": [
+    "ABC",
+    "DEF",
+    "GHI"
+  ],
+  "result": {
+    "item": "slashblade:slashblade"
+  },
+  "show_notification": true
+}

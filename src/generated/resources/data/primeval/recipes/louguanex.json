@@ -1,0 +1,42 @@
+{
+  "type": "slashblade:shaped_blade",
+  "blade": "primeval:louguanex",
+  "category": "equipment",
+  "key": {
+    "A": {
+      "item": "origincore:colorful_ingot"
+    },
+    "C": {
+      "type": "slashblade:blade",
+      "item": "slashblade:slashblade",
+      "request": {
+        "kill": 4000,
+        "name": "primeval:louguan",
+        "proud_soul": 20000,
+        "refine": 10
+      }
+    },
+    "D": {
+      "type": "slashblade:blade",
+      "item": "slashblade:slashblade",
+      "request": {
+        "kill": 1,
+        "name": "primeval:void",
+        "proud_soul": 1,
+        "refine": 25
+      }
+    },
+    "F": {
+      "item": "slashblade:proudsoul_trapezohedron"
+    }
+  },
+  "pattern": [
+    "FFF",
+    "ACA",
+    "FDF"
+  ],
+  "result": {
+    "item": "slashblade:slashblade"
+  },
+  "show_notification": true
+}

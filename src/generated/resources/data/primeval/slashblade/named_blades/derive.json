@@ -1,0 +1,40 @@
+{
+  "enchantments": [
+    {
+      "id": "minecraft:power",
+      "lvl": 5
+    },
+    {
+      "id": "minecraft:knockback"
+    },
+    {
+      "id": "minecraft:infinity"
+    },
+    {
+      "id": "minecraft:mending"
+    },
+    {
+      "id": "minecraft:unbreaking",
+      "lvl": 3
+    }
+  ],
+  "name": "primeval:derive",
+  "properties": {
+    "attack_base": 1.0,
+    "max_damage": 180,
+    "slash_art": "primeval:dajian",
+    "special_effects": [
+      "primeval:diverx",
+      "primeval:clweor"
+    ],
+    "sword_type": [
+      "bewitched"
+    ]
+  },
+  "render": {
+    "carry_type": "default",
+    "model": "primeval:model/yuanshui/derive.obj",
+    "summon_sword_color": 49919,
+    "texture": "primeval:model/yuanshui/derive.png"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "enchantments": [
+    {
+      "id": "minecraft:unbreaking",
+      "lvl": 5
+    },
+    {
+      "id": "minecraft:looting",
+      "lvl": 3
+    }
+  ],
+  "name": "primeval:speak",
+  "properties": {
+    "attack_base": 8.0,
+    "max_damage": 1000,
+    "slash_art": "primeval:jixian",
+    "special_effects": [
+      "primeval:shidai"
+    ],
+    "sword_type": [
+      "bewitched"
+    ]
+  },
+  "render": {
+    "carry_type": "default",
+    "model": "primeval:model/xir/xi.obj",
+    "summon_sword_color": 12815871,
+    "texture": "primeval:model/xir/speak.png"
+  }
+}

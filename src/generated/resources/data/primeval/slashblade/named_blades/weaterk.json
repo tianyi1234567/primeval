@@ -1,0 +1,26 @@
+{
+  "enchantments": [
+    {
+      "id": "minecraft:unbreaking",
+      "lvl": 3
+    }
+  ],
+  "name": "primeval:weaterk",
+  "properties": {
+    "attack_base": 14.0,
+    "max_damage": 4,
+    "slash_art": "primeval:shuixian",
+    "special_effects": [
+      "primeval:weaterpro"
+    ],
+    "sword_type": [
+      "bewitched"
+    ]
+  },
+  "render": {
+    "carry_type": "default",
+    "model": "primeval:model/yuanshui/wearerk.obj",
+    "summon_sword_color": 1886463,
+    "texture": "primeval:model/yuanshui/wearerk.png"
+  }
+}

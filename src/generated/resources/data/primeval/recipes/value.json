@@ -1,0 +1,32 @@
+{
+  "type": "slashblade:shaped_blade",
+  "blade": "primeval:value",
+  "category": "equipment",
+  "key": {
+    "A": {
+      "item": "minecraft:diamond"
+    },
+    "B": {
+      "item": "minecraft:prismarine_shard"
+    },
+    "D": {
+      "type": "slashblade:blade",
+      "item": "slashblade:slashblade",
+      "request": {
+        "kill": 100,
+        "name": "primeval:revelation",
+        "proud_soul": 1000,
+        "refine": 7
+      }
+    }
+  },
+  "pattern": [
+    "BAB",
+    "ADA",
+    "BAB"
+  ],
+  "result": {
+    "item": "slashblade:slashblade"
+  },
+  "show_notification": true
+}

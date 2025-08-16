@@ -1,0 +1,35 @@
+{
+  "type": "slashblade:shaped_blade",
+  "blade": "primeval:xuese",
+  "category": "equipment",
+  "key": {
+    "A": {
+      "item": "origincore:withered_stone"
+    },
+    "B": {
+      "item": "minecraft:redstone_block"
+    },
+    "D": {
+      "type": "slashblade:blade",
+      "item": "slashblade:slashblade",
+      "request": {
+        "kill": 4444,
+        "name": "primeval:void",
+        "proud_soul": 10000,
+        "refine": 15
+      }
+    },
+    "F": {
+      "item": "origincore:disaster_ingot"
+    }
+  },
+  "pattern": [
+    "BAB",
+    "BDB",
+    "FFF"
+  ],
+  "result": {
+    "item": "slashblade:slashblade"
+  },
+  "show_notification": true
+}

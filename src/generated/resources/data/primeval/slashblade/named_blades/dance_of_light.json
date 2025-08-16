@@ -1,0 +1,35 @@
+{
+  "enchantments": [
+    {
+      "id": "minecraft:sharpness",
+      "lvl": 3
+    },
+    {
+      "id": "minecraft:power",
+      "lvl": 2
+    },
+    {
+      "id": "minecraft:looting",
+      "lvl": 2
+    },
+    {
+      "id": "minecraft:unbreaking",
+      "lvl": 3
+    }
+  ],
+  "name": "primeval:dance_of_light",
+  "properties": {
+    "attack_base": 10.0,
+    "max_damage": 1024,
+    "slash_art": "primeval:guanglan",
+    "sword_type": [
+      "bewitched"
+    ]
+  },
+  "render": {
+    "carry_type": "default",
+    "model": "primeval:model/tianyi/dance_of_light.obj",
+    "summon_sword_color": 16187322,
+    "texture": "primeval:model/tianyi/dance_of_light.png"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "type": "slashblade:shaped_blade",
+  "blade": "primeval:weaterk",
+  "category": "equipment",
+  "key": {
+    "A": {
+      "item": "slashblade:proudsoul_crystal"
+    },
+    "B": {
+      "item": "minecraft:water_bucket"
+    },
+    "C": {
+      "type": "slashblade:blade",
+      "item": "slashblade:slashblade",
+      "request": {
+        "kill": 2000,
+        "name": "primeval:void",
+        "proud_soul": 40000,
+        "refine": 1
+      }
+    },
+    "D": {
+      "item": "minecraft:music_disc_13"
+    }
+  },
+  "pattern": [
+    "DBD",
+    "ACA",
+    "BDB"
+  ],
+  "result": {
+    "item": "slashblade:slashblade"
+  },
+  "show_notification": true
+}

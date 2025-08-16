@@ -1,0 +1,25 @@
+{
+  "enchantments": [
+    {
+      "id": "minecraft:unbreaking",
+      "lvl": 3
+    }
+  ],
+  "name": "primeval:xuancai",
+  "properties": {
+    "attack_base": 10.0,
+    "max_damage": 10024,
+    "slash_art": "primeval:xuandrive",
+    "special_effects": [
+      "primeval:clweor"
+    ],
+    "sword_type": [
+      "bewitched"
+    ]
+  },
+  "render": {
+    "carry_type": "default",
+    "model": "primeval:model/yuanshui/xuancai.obj",
+    "texture": "primeval:model/yuanshui/xuancai.png"
+  }
+}

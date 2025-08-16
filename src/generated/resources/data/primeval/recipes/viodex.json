@@ -1,0 +1,30 @@
+{
+  "type": "slashblade:shaped_blade",
+  "blade": "primeval:viodex",
+  "category": "equipment",
+  "key": {
+    "A": {
+      "type": "slashblade:blade",
+      "item": "slashblade:slashblade",
+      "request": {
+        "name": "primeval:void",
+        "refine": 25
+      }
+    },
+    "B": {
+      "item": "minecraft:fire_charge"
+    },
+    "C": {
+      "item": "slashblade:proudsoul_tiny"
+    }
+  },
+  "pattern": [
+    "CBC",
+    "BAB",
+    "CBC"
+  ],
+  "result": {
+    "item": "slashblade:slashblade"
+  },
+  "show_notification": true
+}

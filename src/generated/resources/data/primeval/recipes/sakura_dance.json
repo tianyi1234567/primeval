@@ -1,0 +1,31 @@
+{
+  "type": "slashblade:shaped_blade",
+  "blade": "primeval:sakura_dance",
+  "category": "equipment",
+  "key": {
+    "A": {
+      "item": "origincore:sakura_ingot"
+    },
+    "B": {
+      "item": "origincore:sakura_block"
+    },
+    "D": {
+      "type": "slashblade:blade",
+      "item": "slashblade:slashblade",
+      "request": {
+        "kill": 50,
+        "name": "primeval:void",
+        "refine": 1
+      }
+    }
+  },
+  "pattern": [
+    "BAB",
+    "ADA",
+    "BAB"
+  ],
+  "result": {
+    "item": "slashblade:slashblade"
+  },
+  "show_notification": true
+}

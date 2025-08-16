@@ -1,0 +1,37 @@
+{
+  "type": "slashblade:shaped_blade",
+  "blade": "primeval:jinan",
+  "category": "equipment",
+  "key": {
+    "A": {
+      "type": "slashblade:blade",
+      "item": "slashblade:slashblade",
+      "request": {
+        "kill": 1500,
+        "name": "primeval:void",
+        "refine": 50
+      }
+    },
+    "B": {
+      "item": "origincore:withered_stone"
+    },
+    "C": {
+      "item": "minecraft:dragon_breath"
+    },
+    "D": {
+      "item": "minecraft:blaze_powder"
+    },
+    "E": {
+      "item": "origincore:withered_bones"
+    }
+  },
+  "pattern": [
+    "CBC",
+    "BAB",
+    "DED"
+  ],
+  "result": {
+    "item": "slashblade:slashblade"
+  },
+  "show_notification": true
+}

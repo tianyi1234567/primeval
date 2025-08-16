@@ -1,0 +1,35 @@
+{
+  "enchantments": [
+    {
+      "id": "minecraft:feather_falling",
+      "lvl": 2
+    },
+    {
+      "id": "minecraft:projectile_protection",
+      "lvl": 2
+    },
+    {
+      "id": "minecraft:power",
+      "lvl": 4
+    },
+    {
+      "id": "minecraft:unbreaking",
+      "lvl": 3
+    }
+  ],
+  "name": "primeval:jixu",
+  "properties": {
+    "attack_base": 32.0,
+    "max_damage": 2222,
+    "slash_art": "primeval:huanyinggai",
+    "sword_type": [
+      "bewitched"
+    ]
+  },
+  "render": {
+    "carry_type": "default",
+    "model": "primeval:model/tianyi/jixu.obj",
+    "summon_sword_color": 11908533,
+    "texture": "primeval:model/tianyi/jixu.png"
+  }
+}

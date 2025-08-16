@@ -1,0 +1,35 @@
+{
+  "enchantments": [
+    {
+      "id": "minecraft:fire_aspect",
+      "lvl": 3
+    },
+    {
+      "id": "minecraft:sweeping"
+    },
+    {
+      "id": "minecraft:mending"
+    },
+    {
+      "id": "minecraft:power",
+      "lvl": 2
+    },
+    {
+      "id": "minecraft:looting"
+    }
+  ],
+  "name": "primeval:bailou",
+  "properties": {
+    "attack_base": 12.0,
+    "max_damage": 10024,
+    "slash_art": "primeval:qixing",
+    "sword_type": [
+      "bewitched"
+    ]
+  },
+  "render": {
+    "carry_type": "default",
+    "model": "primeval:model/lou/bailou.obj",
+    "texture": "primeval:model/lou/bailou.png"
+  }
+}

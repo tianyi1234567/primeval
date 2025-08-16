@@ -1,0 +1,46 @@
+{
+  "enchantments": [
+    {
+      "id": "minecraft:mending",
+      "lvl": 11
+    },
+    {
+      "id": "minecraft:smite",
+      "lvl": 5
+    },
+    {
+      "id": "minecraft:bane_of_arthropods",
+      "lvl": 5
+    },
+    {
+      "id": "minecraft:looting",
+      "lvl": 3
+    },
+    {
+      "id": "minecraft:power",
+      "lvl": 2
+    },
+    {
+      "id": "minecraft:unbreaking",
+      "lvl": 3
+    }
+  ],
+  "name": "primeval:yinyang",
+  "properties": {
+    "attack_base": 34.0,
+    "max_damage": 9898,
+    "slash_art": "primeval:ertian",
+    "special_effects": [
+      "primeval:yinyangjian"
+    ],
+    "sword_type": [
+      "bewitched"
+    ]
+  },
+  "render": {
+    "carry_type": "default",
+    "model": "primeval:model/tianyi/yinyangpo.obj",
+    "summon_sword_color": 8487297,
+    "texture": "primeval:model/tianyi/yinyang.png"
+  }
+}

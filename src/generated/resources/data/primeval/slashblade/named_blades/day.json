@@ -1,0 +1,38 @@
+{
+  "enchantments": [
+    {
+      "id": "minecraft:power",
+      "lvl": 7
+    },
+    {
+      "id": "minecraft:protection",
+      "lvl": 7
+    },
+    {
+      "id": "minecraft:mending",
+      "lvl": 7
+    },
+    {
+      "id": "minecraft:unbreaking",
+      "lvl": 7
+    }
+  ],
+  "name": "primeval:day",
+  "properties": {
+    "attack_base": 35.0,
+    "max_damage": 77777,
+    "slash_art": "primeval:taichu",
+    "special_effects": [
+      "primeval:yuanmeng"
+    ],
+    "sword_type": [
+      "bewitched"
+    ]
+  },
+  "render": {
+    "carry_type": "default",
+    "model": "primeval:model/xir/day.obj",
+    "summon_sword_color": 16773651,
+    "texture": "primeval:model/xir/day.png"
+  }
+}

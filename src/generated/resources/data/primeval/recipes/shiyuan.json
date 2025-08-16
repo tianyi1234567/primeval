@@ -1,0 +1,35 @@
+{
+  "type": "slashblade:shaped_blade",
+  "blade": "primeval:shiyuan",
+  "category": "equipment",
+  "key": {
+    "B": {
+      "item": "origincore:experience_star"
+    },
+    "C": {
+      "item": "origincore:stars_ingot"
+    },
+    "D": {
+      "type": "slashblade:blade",
+      "item": "slashblade:slashblade",
+      "request": {
+        "kill": 3500,
+        "name": "primeval:the_falling_star",
+        "proud_soul": 6000,
+        "refine": 10
+      }
+    },
+    "F": {
+      "item": "minecraft:nether_star"
+    }
+  },
+  "pattern": [
+    "BCB",
+    "CDC",
+    "FCF"
+  ],
+  "result": {
+    "item": "slashblade:slashblade"
+  },
+  "show_notification": true
+}

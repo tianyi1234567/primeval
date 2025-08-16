@@ -1,0 +1,99 @@
+{
+  "type": "slashblade:shaped_blade",
+  "blade": "primeval:day",
+  "category": "equipment",
+  "key": {
+    "A": {
+      "type": "slashblade:blade",
+      "item": "slashblade:slashblade",
+      "request": {
+        "kill": 250,
+        "name": "primeval:real",
+        "proud_soul": 2000,
+        "refine": 7
+      }
+    },
+    "B": {
+      "type": "slashblade:blade",
+      "item": "slashblade:slashblade",
+      "request": {
+        "kill": 250,
+        "name": "primeval:calendar_system",
+        "proud_soul": 2000,
+        "refine": 7
+      }
+    },
+    "C": {
+      "type": "slashblade:blade",
+      "item": "slashblade:slashblade",
+      "request": {
+        "kill": 250,
+        "name": "primeval:speak",
+        "proud_soul": 2000,
+        "refine": 7
+      }
+    },
+    "D": {
+      "type": "slashblade:blade",
+      "item": "slashblade:slashblade",
+      "request": {
+        "kill": 250,
+        "name": "primeval:value",
+        "proud_soul": 2000,
+        "refine": 7
+      }
+    },
+    "E": {
+      "type": "slashblade:blade",
+      "item": "slashblade:slashblade",
+      "request": {
+        "kill": 250,
+        "name": "primeval:rule",
+        "proud_soul": 2000,
+        "refine": 7
+      }
+    },
+    "F": {
+      "type": "slashblade:blade",
+      "item": "slashblade:slashblade",
+      "request": {
+        "kill": 250,
+        "name": "primeval:significance",
+        "proud_soul": 2000,
+        "refine": 7
+      }
+    },
+    "G": {
+      "type": "slashblade:blade",
+      "item": "slashblade:slashblade",
+      "request": {
+        "kill": 250,
+        "name": "primeval:dignity",
+        "proud_soul": 2000,
+        "refine": 7
+      }
+    },
+    "H": {
+      "item": "minecraft:dragon_egg"
+    },
+    "V": {
+      "type": "slashblade:blade",
+      "item": "slashblade:slashblade",
+      "request": {
+        "kill": 7,
+        "name": "primeval:revelation",
+        "proud_soul": 7000,
+        "refine": 7
+      }
+    }
+  },
+  "pattern": [
+    "CDE",
+    "BHF",
+    "AVG"
+  ],
+  "result": {
+    "item": "slashblade:slashblade"
+  },
+  "show_notification": true
+}

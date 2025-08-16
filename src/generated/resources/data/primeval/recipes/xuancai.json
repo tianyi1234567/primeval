@@ -1,0 +1,50 @@
+{
+  "type": "slashblade:shaped_blade",
+  "blade": "primeval:xuancai",
+  "category": "equipment",
+  "key": {
+    "A": {
+      "item": "minecraft:white_wool"
+    },
+    "B": {
+      "item": "minecraft:red_wool"
+    },
+    "C": {
+      "item": "minecraft:yellow_wool"
+    },
+    "D": {
+      "item": "minecraft:green_wool"
+    },
+    "E": {
+      "item": "minecraft:black_wool"
+    },
+    "F": {
+      "item": "minecraft:blue_wool"
+    },
+    "G": {
+      "item": "minecraft:purple_wool"
+    },
+    "H": {
+      "item": "minecraft:pink_wool"
+    },
+    "I": {
+      "type": "slashblade:blade",
+      "item": "slashblade:slashblade",
+      "request": {
+        "kill": 5000,
+        "name": "primeval:moying",
+        "proud_soul": 50000,
+        "refine": 20
+      }
+    }
+  },
+  "pattern": [
+    "ABC",
+    "DIE",
+    "FGH"
+  ],
+  "result": {
+    "item": "slashblade:slashblade"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,27 @@
+{
+  "enchantments": [
+    {
+      "id": "minecraft:smite",
+      "lvl": 5
+    }
+  ],
+  "name": "primeval:huazhiwu",
+  "properties": {
+    "attack_base": 23.0,
+    "max_damage": 16357,
+    "slash_art": "primeval:yumao",
+    "special_effects": [
+      "primeval:duan",
+      "primeval:clweor"
+    ],
+    "sword_type": [
+      "bewitched"
+    ]
+  },
+  "render": {
+    "carry_type": "default",
+    "model": "primeval:model/yuanshui/huazhiwu.obj",
+    "summon_sword_color": 41215,
+    "texture": "primeval:model/yuanshui/huazhiwu.png"
+  }
+}

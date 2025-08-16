@@ -1,0 +1,23 @@
+{
+  "enchantments": [
+    {
+      "id": "minecraft:unbreaking",
+      "lvl": 5
+    }
+  ],
+  "name": "primeval:void",
+  "properties": {
+    "attack_base": 3.0,
+    "max_damage": 20240,
+    "slash_art": "slashblade:drive_vertical",
+    "sword_type": [
+      "enchanted"
+    ]
+  },
+  "render": {
+    "carry_type": "default",
+    "model": "primeval:model/tianyi/void.obj",
+    "summon_sword_color": 16774471,
+    "texture": "primeval:model/tianyi/void.png"
+  }
+}

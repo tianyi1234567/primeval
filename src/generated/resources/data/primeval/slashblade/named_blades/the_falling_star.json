@@ -1,0 +1,36 @@
+{
+  "enchantments": [
+    {
+      "id": "minecraft:sharpness",
+      "lvl": 5
+    },
+    {
+      "id": "minecraft:sweeping"
+    },
+    {
+      "id": "minecraft:power"
+    },
+    {
+      "id": "minecraft:looting"
+    },
+    {
+      "id": "minecraft:unbreaking",
+      "lvl": 3
+    }
+  ],
+  "name": "primeval:the_falling_star",
+  "properties": {
+    "attack_base": 14.0,
+    "max_damage": 888,
+    "slash_art": "primeval:dyfs",
+    "sword_type": [
+      "bewitched"
+    ]
+  },
+  "render": {
+    "carry_type": "default",
+    "model": "primeval:model/tianyi/the_falling_star.obj",
+    "summon_sword_color": 1744894,
+    "texture": "primeval:model/tianyi/the_falling_star.png"
+  }
+}

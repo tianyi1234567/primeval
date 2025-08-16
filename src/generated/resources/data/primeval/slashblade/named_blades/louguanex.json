@@ -1,0 +1,41 @@
+{
+  "enchantments": [
+    {
+      "id": "minecraft:bane_of_arthropods",
+      "lvl": 5
+    },
+    {
+      "id": "minecraft:smite",
+      "lvl": 5
+    },
+    {
+      "id": "minecraft:feather_falling",
+      "lvl": 5
+    },
+    {
+      "id": "minecraft:thorns",
+      "lvl": 4
+    },
+    {
+      "id": "minecraft:mending",
+      "lvl": 5
+    }
+  ],
+  "name": "primeval:louguanex",
+  "properties": {
+    "attack_base": 24.0,
+    "max_damage": 10024,
+    "slash_art": "slashblade:void_slash",
+    "special_effects": [
+      "primeval:duanex"
+    ],
+    "sword_type": [
+      "bewitched"
+    ]
+  },
+  "render": {
+    "carry_type": "default",
+    "model": "primeval:model/lou/louguanex.obj",
+    "texture": "primeval:model/lou/louguan.png"
+  }
+}

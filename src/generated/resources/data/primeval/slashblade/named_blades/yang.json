@@ -1,0 +1,27 @@
+{
+  "enchantments": [
+    {
+      "id": "minecraft:smite",
+      "lvl": 5
+    },
+    {
+      "id": "minecraft:unbreaking",
+      "lvl": 3
+    }
+  ],
+  "name": "primeval:yang",
+  "properties": {
+    "attack_base": 10.0,
+    "max_damage": 989,
+    "slash_art": "primeval:lianzhanb",
+    "sword_type": [
+      "bewitched"
+    ]
+  },
+  "render": {
+    "carry_type": "default",
+    "model": "primeval:model/tianyi/yinyang.obj",
+    "summon_sword_color": 16777215,
+    "texture": "primeval:model/tianyi/yang.png"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "enchantments": [
+    {
+      "id": "minecraft:sharpness"
+    },
+    {
+      "id": "minecraft:sweeping",
+      "lvl": 2
+    },
+    {
+      "id": "minecraft:unbreaking",
+      "lvl": 3
+    }
+  ],
+  "name": "primeval:zhejian",
+  "properties": {
+    "attack_base": 15.0,
+    "max_damage": 4000,
+    "slash_art": "primeval:shuixian",
+    "special_effects": [
+      "primeval:attow"
+    ],
+    "sword_type": [
+      "bewitched"
+    ]
+  },
+  "render": {
+    "carry_type": "default",
+    "model": "primeval:model/xir/xmr.obj",
+    "summon_sword_color": 16777215,
+    "texture": "primeval:model/xir/xmr.png"
+  }
+}

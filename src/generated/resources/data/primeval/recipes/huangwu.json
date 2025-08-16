@@ -1,0 +1,50 @@
+{
+  "type": "slashblade:shaped_blade",
+  "blade": "primeval:huangwu",
+  "category": "equipment",
+  "key": {
+    "A": {
+      "item": "origincore:disaster_ingot"
+    },
+    "B": {
+      "item": "origincore:withered_ingot"
+    },
+    "C": {
+      "item": "minecraft:nether_star"
+    },
+    "D": {
+      "type": "slashblade:blade",
+      "item": "slashblade:slashblade",
+      "request": {
+        "name": "primeval:void"
+      }
+    },
+    "F": {
+      "type": "slashblade:blade",
+      "item": "slashblade:slashblade",
+      "request": {
+        "kill": 3000,
+        "name": "primeval:jinan",
+        "refine": 80
+      }
+    },
+    "G": {
+      "type": "slashblade:blade",
+      "item": "slashblade:slashblade",
+      "request": {
+        "kill": 4000,
+        "name": "primeval:jixu",
+        "refine": 20
+      }
+    }
+  },
+  "pattern": [
+    "ADB",
+    "CFC",
+    "BGA"
+  ],
+  "result": {
+    "item": "slashblade:slashblade"
+  },
+  "show_notification": true
+}

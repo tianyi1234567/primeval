@@ -1,0 +1,31 @@
+{
+  "enchantments": [
+    {
+      "id": "minecraft:unbreaking",
+      "lvl": 40
+    },
+    {
+      "id": "minecraft:projectile_protection",
+      "lvl": 2
+    },
+    {
+      "id": "minecraft:feather_falling",
+      "lvl": 2
+    }
+  ],
+  "name": "primeval:moying",
+  "properties": {
+    "attack_base": 12.0,
+    "max_damage": 10240,
+    "slash_art": "primeval:lianzhan",
+    "sword_type": [
+      "bewitched"
+    ]
+  },
+  "render": {
+    "carry_type": "default",
+    "model": "primeval:model/tianyi/moying.obj",
+    "summon_sword_color": 15662966,
+    "texture": "primeval:model/tianyi/moying.png"
+  }
+}

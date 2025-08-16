@@ -1,0 +1,35 @@
+{
+  "type": "slashblade:shaped_blade",
+  "blade": "primeval:dance_of_light",
+  "category": "equipment",
+  "key": {
+    "A": {
+      "item": "minecraft:experience_bottle"
+    },
+    "B": {
+      "item": "origincore:luster_ingot"
+    },
+    "C": {
+      "item": "origincore:shine_ingot"
+    },
+    "D": {
+      "type": "slashblade:blade",
+      "item": "slashblade:slashblade",
+      "request": {
+        "kill": 500,
+        "name": "primeval:void",
+        "proud_soul": 1500,
+        "refine": 5
+      }
+    }
+  },
+  "pattern": [
+    "BCB",
+    "ADA",
+    "BCB"
+  ],
+  "result": {
+    "item": "slashblade:slashblade"
+  },
+  "show_notification": true
+}

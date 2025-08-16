@@ -1,0 +1,29 @@
+{
+  "enchantments": [
+    {
+      "id": "minecraft:fire_aspect",
+      "lvl": 3
+    },
+    {
+      "id": "minecraft:sweeping"
+    },
+    {
+      "id": "minecraft:unbreaking",
+      "lvl": 3
+    }
+  ],
+  "name": "primeval:jinan",
+  "properties": {
+    "attack_base": 20.0,
+    "max_damage": 1024,
+    "slash_art": "primeval:dpro",
+    "sword_type": [
+      "bewitched"
+    ]
+  },
+  "render": {
+    "carry_type": "default",
+    "model": "primeval:model/lou/jinan.obj",
+    "texture": "primeval:model/lou/jinan.png"
+  }
+}
