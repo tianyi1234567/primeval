@@ -222,14 +222,14 @@ public class SrelicBladeRecipeProvioder extends RecipeProvider implements ICondi
                 .define('A',  SlashBladeIngredient.of(
                         RequestDefinition.Builder.newInstance()
                                 .name(SRelicBuiltInRegsitry.YIN.location())
-                                .killCount(3000)
+                                .killCount(2000)
                                 .proudSoul(10000)
                                 .refineCount(10)
                                 .build()))
                 .define('D',  SlashBladeIngredient.of(
                         RequestDefinition.Builder.newInstance()
                                 .name(SRelicBuiltInRegsitry.YANG.location())
-                                .killCount(3000)
+                                .killCount(2000)
                                 .proudSoul(10000)
                                 .refineCount(10)
                                 .build()))

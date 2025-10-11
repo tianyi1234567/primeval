@@ -344,7 +344,7 @@ public class SRelicBuiltInRegsitry {
                                 .effectColor(8487297)//颜色
                                 .build(),
                         PropertiesDefinition.Builder.newInstance()
-                                .baseAttackModifier(34)//伤害
+                                .baseAttackModifier(40)//伤害
                                 .defaultSwordType(List.of(SwordType.BEWITCHED))
                                 .slashArtsType(PLslashArtRegsitry.ERTIAN.getId())//SA
                                 .addSpecialEffect(PLSpecialEffectsRegistry.YINYANGJIAN.getId())//这是SE
@@ -365,7 +365,7 @@ public class SRelicBuiltInRegsitry {
                                 .effectColor(16717848)//颜色
                                 .build(),
                         PropertiesDefinition.Builder.newInstance()
-                                .baseAttackModifier(25)//伤害
+                                .baseAttackModifier(24)//伤害
                                 .defaultSwordType(List.of(SwordType.BEWITCHED))
                                 .slashArtsType(PLComboRegsitry.XUE_YU.getId())//SA
                                 .addSpecialEffect(PLSpecialEffectsRegistry.SHIXUE.getId())//这是SE
@@ -400,7 +400,7 @@ public class SRelicBuiltInRegsitry {
                                 .effectColor(9917695)//颜色
                                 .build(),
                         PropertiesDefinition.Builder.newInstance()
-                                .baseAttackModifier(36)//伤害
+                                .baseAttackModifier(42)//伤害
                                 .defaultSwordType(List.of(SwordType.BEWITCHED))
                                 .slashArtsType(PLComboRegsitry.SILIEEX.getId())//SA
                                 .addSpecialEffect(PLSpecialEffectsRegistry.XINGHUN.getId())
@@ -666,7 +666,7 @@ public class SRelicBuiltInRegsitry {
                                 .effectColor(16731007)//颜色
                                 .build(),
                         PropertiesDefinition.Builder.newInstance()
-                                .baseAttackModifier(20)//伤害
+                                .baseAttackModifier(38)//伤害
                                 .defaultSwordType(List.of(SwordType.BEWITCHED))
                                 .slashArtsType(PLComboRegsitry.XUEREN.getId())//SA
                                 .addSpecialEffect(PLSpecialEffectsRegistry.XUEYUX.getId())

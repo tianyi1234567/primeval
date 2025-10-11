@@ -1,4 +1,4 @@
-// 1.20.1	2025-08-16T18:01:09.9101605	Recipes
+// 1.20.1	2025-10-02T20:24:54.418586	Recipes
 76c392ab6f70d64cd784e07ebad081076b12ab1c data/minecraft/advancements/recipes/misc/air_from_smelting_yellow_wool.json
 c34c763dbbb712f87f56f9a815f71daea3b84af7 data/minecraft/recipes/air_from_smelting_yellow_wool.json
 38d86dec2eb9c39fa960aee5639e3963bfd32e45 data/primeval/advancements/recipes/combat/bailouex.json
@@ -47,7 +47,7 @@ e453ae1cd93c34e66059b0afe1795704bf2c30b3 data/primeval/recipes/big_wind.json
 b7ac00b35cd5f04ce49574d4c39219aef7c079d9 data/primeval/recipes/hongy.json
 c4d2c308c08471fb6e363a277ba55632799b5ef2 data/primeval/recipes/huangwu.json
 9ee52a59dd5feff8f0da6e94751c9f030522e49b data/primeval/recipes/jinan.json
-66a33ac2d2f3470dfaf3bd61a987181cc4f7a00a data/primeval/recipes/jixu.json
+67b47ec0aeb3e61e799631b849cb4bf0052af082 data/primeval/recipes/jixu.json
 4a52d61cfd9977ec95fb762a268cc97bd4e49e53 data/primeval/recipes/lieyan.json
 aee787f3793834bca7193509b8985174c8ad59e9 data/primeval/recipes/louguanex.json
 33ea38b2ed7ee85a11852048b642d19b04ea4381 data/primeval/recipes/miracle.json

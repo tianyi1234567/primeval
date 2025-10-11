@@ -1,6 +1,7 @@
 package com.tianyi.primeval.registry;
 
 import com.tianyi.primeval.Primeval;
+import com.tianyi.primeval.cover.ExSlashEffect;
 import com.tianyi.primeval.cover.SlashEffect;
 import com.tianyi.primeval.entity.SuperdriveEntity;
 import com.tianyi.primeval.mclib.Utils.SlashBlade.SlashEffectUtils;
@@ -324,25 +325,21 @@ public class PLComboRegsitry {
                             .nextOfTimeout(entity -> Primeval.prefix("all_reuse"))//收刀或下一步动作
                             .addTickAction(ComboState.TimeLineTickAction.getBuilder()
                                     .put(1, (entityIn) -> XiWang.doSlash(entityIn, false, 6, 2f))
-                                    .put(2, (entityIn) -> SlashEffect.SakuraEnd.doSlash(entityIn, 145F, Vec3.ZERO, false, false, 1))
-                                    .put(3, (entityIn) -> BigDriveSummon.doSlash(entityIn, 145F, 10, Vec3.ZERO, false, 15, 2f))
+                                    .put(2, (entityIn) -> SlashEffect.SakuraEnd.doSlash(entityIn, 145F, Vec3.ZERO, false, false, 2))
+                                    .put(3, (entityIn) -> BigDriveSummon.doSlash(entityIn, 145F, 10, Vec3.ZERO, false, 2, 2f))
                                     .put(10, (entityIn) -> SlashEffect.SakuraEnd.doSlash(entityIn, 145F, Vec3.ZERO, false, false, 1))
                                     .put(18, (entityIn) -> XiWang.doSlash(entityIn, false, 6, 2f))
-                                    .put(19, (entityIn) -> SlashEffect.SakuraEnd.doSlash(entityIn, 45F, Vec3.ZERO, false, false, 1))
-                                    .put(20, (entityIn) -> BigDriveSummon.doSlash(entityIn, 45F, 10, Vec3.ZERO, false, 15, 2f))
+                                    .put(19, (entityIn) -> SlashEffect.SakuraEnd.doSlash(entityIn, 45F, Vec3.ZERO, false, false, 2))
+                                    .put(20, (entityIn) -> BigDriveSummon.doSlash(entityIn, 45F, 10, Vec3.ZERO, false, 2, 2f))
                                     .put(27, (entityIn) -> SlashEffect.SakuraEnd.doSlash(entityIn, 45F, Vec3.ZERO, false, false, 1))
                                     .put(35, (entityIn) -> XiWang.doSlash(entityIn, false, 6, 2f))
-                                    .put(36, (entityIn) -> SlashEffect.SakuraEnd.doSlash(entityIn, 180F, Vec3.ZERO, false, false, 1))
-                                    .put(37, (entityIn) -> BigDriveSummon.doSlash(entityIn, 180F, 10, Vec3.ZERO, false, 15, 2f))
+                                    .put(36, (entityIn) -> SlashEffect.SakuraEnd.doSlash(entityIn, 180F, Vec3.ZERO, false, false, 2))
+                                    .put(37, (entityIn) -> BigDriveSummon.doSlash(entityIn, 180F, 10, Vec3.ZERO, false, 2, 2f))
+                                    .put(40, (entityIn) -> XXswordSOM.doXXsword(entityIn, false, 30, 2))
                                     .put(45, (entityIn) -> CircleSlash.doCircleSlashAttack(entityIn, 0))
                                     .put(46, (entityIn) -> CircleSlash.doCircleSlashAttack(entityIn, 180))
-                                    .put(50, (entityIn) -> Drive.doSlash(entityIn, 0F, 15, Vec3.ZERO, false, 3, 3f))
-                                    .put(52, (entityIn) -> Drive.doSlash(entityIn, 51F, 15, Vec3.ZERO, false, 3, 3f))
-                                    .put(54, (entityIn) -> Drive.doSlash(entityIn, 103F, 15, Vec3.ZERO, false, 3, 3f))
-                                    .put(56, (entityIn) -> Drive.doSlash(entityIn, 154F, 15, Vec3.ZERO, false, 3, 3f))
-                                    .put(58, (entityIn) -> Drive.doSlash(entityIn, 205F, 15, Vec3.ZERO, false, 3, 3f))
-                                    .put(60, (entityIn) -> Drive.doSlash(entityIn, 257F, 15, Vec3.ZERO, false, 3, 3f))
-                                    .put(62, (entityIn) -> Drive.doSlash(entityIn, 308F, 15, Vec3.ZERO, false, 3, 3f)).build())
+                                    .put(50, (entityIn) -> XXswordSOM.doXXsword(entityIn, false, 25, 2))
+                                    .put(60, (entityIn) -> XXswordSOM.doXXsword(entityIn, false, 25, 2)).build())
                             .addHitEffect(StunManager::setStun)
                             ::build
             );
@@ -564,7 +561,7 @@ public class PLComboRegsitry {
                             .next(ComboState.TimeoutNext.buildFromFrame(10, entity -> SlashBlade.prefix("none")))
                             .nextOfTimeout(entity -> Primeval.prefix("all_reuse"))//收刀
                             .addTickAction(ComboState.TimeLineTickAction.getBuilder()
-                                    .put(1, (entityIn) -> SanZhu.doSlash(entityIn, false, 5, 1f))
+                                    .put(1, (entityIn) -> ExSlashEffect.MoonSlash.create(entityIn, 45.0f, Vec3.ZERO, false, true, 2.0))
                                     .build())
                             .addHitEffect(StunManager::setStun)
                             ::build

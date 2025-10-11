@@ -7,7 +7,7 @@
       "type": "slashblade:blade",
       "item": "slashblade:slashblade",
       "request": {
-        "kill": 3000,
+        "kill": 2000,
         "name": "primeval:yin",
         "proud_soul": 10000,
         "refine": 10
@@ -20,7 +20,7 @@
       "type": "slashblade:blade",
       "item": "slashblade:slashblade",
       "request": {
-        "kill": 3000,
+        "kill": 2000,
         "name": "primeval:yang",
         "proud_soul": 10000,
         "refine": 10

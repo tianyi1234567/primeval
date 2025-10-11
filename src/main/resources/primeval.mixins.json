@@ -3,8 +3,9 @@
   "minVersion": "0.8.5",
   "package": "com.tianyi.primeval.mixin",
   "compatibilityLevel": "JAVA_17",
-  "refmap": "mixins.primeval.refmap.json",
+  "refmap": "primeval.refmap.json",
   "mixins": [
+    "EntityMixin"
   ],
   "client": [],
   "server": [],

@@ -4,15 +4,23 @@ package com.tianyi.primeval.specialattacks.swrod;
 import com.tianyi.primeval.entity.TheBreakSwordPlus;
 import com.tianyi.primeval.registry.PLEntiteRegristrys;
 import mods.flammpfeil.slashblade.item.ItemSlashBlade;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.block.NetherPortalBlock;
 import net.minecraft.world.phys.AABB;
 import net.minecraft.world.phys.Vec3;
+import net.minecraftforge.event.entity.player.PlayerEvent;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.common.Mod;
 
 import java.awt.*;
 import java.util.List;
-
 public class TheBrokenSword {
+
+
     public static void doSlash(LivingEntity livingEntity, float damage, float speed) {
         Level world = livingEntity.level();
 
