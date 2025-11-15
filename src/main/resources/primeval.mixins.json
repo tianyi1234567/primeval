@@ -5,7 +5,8 @@
   "compatibilityLevel": "JAVA_17",
   "refmap": "primeval.refmap.json",
   "mixins": [
-    "EntityMixin"
+    "EntityMixin",
+    "SlashBladeTooltipMixin"
   ],
   "client": [],
   "server": [],
