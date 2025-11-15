@@ -3,9 +3,7 @@ package com.tianyi.primeval.cilent;
 import com.tianyi.primeval.cilent.render.*;
 import com.tianyi.primeval.registry.PLEntiteRegristrys;
 import mods.flammpfeil.slashblade.client.renderer.entity.DriveRenderer;
-import mods.flammpfeil.slashblade.client.renderer.entity.SlashEffectRenderer;
 import mods.flammpfeil.slashblade.client.renderer.entity.SummonedSwordRenderer;
-import mods.flammpfeil.slashblade.entity.EntitySlashEffect;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -40,5 +38,6 @@ public class SrelicClient {
         event.registerEntityRenderer(PLEntiteRegristrys.aata,RangeSlashRender::new);
         event.registerEntityRenderer(PLEntiteRegristrys.ceo, DriveRenderer::new);
         event.registerEntityRenderer(PLEntiteRegristrys.supde, SuperdriveRenderer::new);
+        event.registerEntityRenderer(PLEntiteRegristrys.ExperDrive, ExperDriveRender::new);
     }
 }

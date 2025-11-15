@@ -36,3 +36,9 @@ mandatory=true
 versionRange="1.2.0"
 ordering="NONE"
 side="BOTH"
+[[dependencies.primeval]]
+modId="legendreliclib"
+mandatory=true
+versionRange="1.1.4"
+ordering="NONE"
+side="BOTH"

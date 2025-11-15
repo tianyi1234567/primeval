@@ -1,5 +1,7 @@
 package com.tianyi.primeval.registry.specialeffects;
 
+import com.dinzeer.legendreliclib.lib.compat.slashblade.SwordRainGenerator;
+import com.dinzeer.legendreliclib.lib.compat.slashblade.entity.swordrain.BaseSwordRainEntity;
 import com.tianyi.primeval.registry.PLSpecialEffectsRegistry;
 import com.tianyi.primeval.specialattacks.swrod.YingYu;
 import mods.flammpfeil.slashblade.capability.slashblade.ISlashBladeState;
@@ -29,8 +31,8 @@ public class Yingyu extends SpecialEffect {
             RandomSource random = player.getRandom();
             int level = player.experienceLevel;
             if (SpecialEffect.isEffective(PLSpecialEffectsRegistry.YINGYU.get(), level)) {
-                if (random.nextInt(100)>=60){
-                    YingYu.doSlash(player,false,4,3);
+                for(BaseSwordRainEntity swordRain : SwordRainGenerator.generateFivePointSwordRain(event.getUser(), event.getUser().level(), 5)) {
+                    swordRain.setDelay(random.nextInt(10));//延迟释放的时间
                 }
             }
         }

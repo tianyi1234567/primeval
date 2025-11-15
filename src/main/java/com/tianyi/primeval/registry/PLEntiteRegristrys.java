@@ -3,12 +3,15 @@ package com.tianyi.primeval.registry;
 import com.google.common.base.CaseFormat;
 import com.tianyi.primeval.Primeval;
 import com.tianyi.primeval.entity.*;
+import com.tianyi.primeval.entity.xeper.ExperDriveEntity;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
+import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegisterEvent;
+import net.minecraftforge.registries.RegistryObject;
 
 import static com.tianyi.primeval.Primeval.MODID;
 
@@ -80,6 +83,9 @@ public class PLEntiteRegristrys {
     public static final ResourceLocation SUPDE = new ResourceLocation(MODID,
             classToString(SuperdriveEntity.class));
     public static EntityType<SuperdriveEntity> supde;
+    public static final ResourceLocation EXPERDrive = new ResourceLocation(MODID,
+            classToString(ExperDriveEntity.class));
+    public static EntityType<ExperDriveEntity> ExperDrive;
 
 
     public static void register(RegisterEvent event) {
@@ -259,7 +265,16 @@ public class PLEntiteRegristrys {
                 helper.register(SUPDE, entity);
             }
         });
+        event.register(ForgeRegistries.Keys.ENTITY_TYPES, helper -> {
+            {
+                EntityType <ExperDriveEntity> entity = ExperDrive = EntityType.Builder.of(ExperDriveEntity::new, MobCategory.MISC)
+                        .sized(0.5f, 0.5f).setTrackingRange(4).setUpdateInterval(20)
+                        .setCustomClientFactory(ExperDriveEntity::createInstance).build(EXPERDrive.toString());
+                helper.register(EXPERDrive, entity);
+            }
+        });
     }
+
 
     public static String classToString(Class<? extends Entity> entityClass)
     {

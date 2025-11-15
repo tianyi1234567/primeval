@@ -21,7 +21,7 @@
   ],
   "name": "primeval:hongy",
   "properties": {
-    "attack_base": 20.0,
+    "attack_base": 38.0,
     "max_damage": 14444,
     "slash_art": "primeval:xueren",
     "special_effects": [

@@ -19,7 +19,7 @@
   ],
   "name": "primeval:shiyuanex",
   "properties": {
-    "attack_base": 36.0,
+    "attack_base": 42.0,
     "max_damage": 7000,
     "slash_art": "primeval:silieex",
     "special_effects": [

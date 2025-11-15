@@ -1,7 +1,5 @@
 package com.tianyi.primeval.entity;
 
-
-
 import com.tianyi.primeval.registry.PLEntiteRegristrys;
 import mods.flammpfeil.slashblade.entity.EntityDrive;
 import mods.flammpfeil.slashblade.entity.Projectile;

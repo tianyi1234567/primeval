@@ -4,8 +4,10 @@ import com.tianyi.primeval.Primeval;
 import com.tianyi.primeval.cover.ExSlashEffect;
 import com.tianyi.primeval.cover.SlashEffect;
 import com.tianyi.primeval.entity.SuperdriveEntity;
+import com.tianyi.primeval.entity.xeper.ExperDriveEntity;
 import com.tianyi.primeval.mclib.Utils.SlashBlade.SlashEffectUtils;
 import com.tianyi.primeval.specialattacks.Drive.Blowing;
+import com.tianyi.primeval.specialattacks.Drive.Experdrive;
 import com.tianyi.primeval.specialattacks.Drive.SuperDV;
 import com.tianyi.primeval.specialattacks.swrod.*;
 import mods.flammpfeil.slashblade.SlashBlade;
@@ -548,6 +550,12 @@ public class PLComboRegsitry {
                             })
                             .put(12, (entityIn) -> SlashEffect.SakuraEnd.doSlash(entityIn, 145F, Vec3.ZERO, false, false, 1F))
                             .put(13, (entityIn) -> SuperDV.doSlash(entityIn, 145F, 120, Vec3.ZERO, false, 3, 0.01f))
+                            .put(15, (entityIn) -> {
+                                // 播放烈焰人被攻击的音效
+                                entityIn.level().playSound(null, entityIn.getX(), entityIn.getY(), entityIn.getZ(),
+                                        net.minecraft.sounds.SoundEvents.BLAZE_HURT,
+                                        net.minecraft.sounds.SoundSource.PLAYERS,
+                                        1.0F, 1.0F);})
                             .build())
                     .addTickAction(FallHandler::fallDecrease)
                     .addHitEffect(StunManager::setStun)
@@ -561,7 +569,20 @@ public class PLComboRegsitry {
                             .next(ComboState.TimeoutNext.buildFromFrame(10, entity -> SlashBlade.prefix("none")))
                             .nextOfTimeout(entity -> Primeval.prefix("all_reuse"))//收刀
                             .addTickAction(ComboState.TimeLineTickAction.getBuilder()
-                                    .put(1, (entityIn) -> ExSlashEffect.MoonSlash.create(entityIn, 45.0f, Vec3.ZERO, false, true, 2.0))
+                                    .put(1, (entityIn) -> Experdrive.doSlash(entityIn,0F, 60.0F, 2.0F, 2156543, 1.0F))
+                                    .put(3, (entityIn) -> Experdrive.doSlash(entityIn,0F, 60.0F, 2.0F, 2156543, 1.0F))
+                                    .put(5, (entityIn) -> Experdrive.doSlash(entityIn,0F, 60.0F, 2.0F, 2156543, 1.0F))
+                                    .put(7, (entityIn) -> Experdrive.doSlash(entityIn,0F, 60.0F, 2.0F, 2156543, 1.0F))
+                                    .put(9, (entityIn) -> Experdrive.doSlash(entityIn,0F, 60.0F, 2.0F, 2156543, 1.0F))
+                                    .put(11, (entityIn) -> Experdrive.doSlash(entityIn,0F, 60.0F, 2.0F, 2156543, 1.0F))
+                                    .put(13, (entityIn) -> Experdrive.doSlash(entityIn,0F, 60.0F, 2.0F, 2156543, 1.0F))
+                                    .put(15, (entityIn) -> Experdrive.doSlash(entityIn,0F, 60.0F, 2.0F, 2156543, 1.0F))
+                                    .put(17, (entityIn) -> Experdrive.doSlash(entityIn,0F, 60.0F, 2.0F, 2156543, 1.0F))
+                                    .put(19, (entityIn) -> Experdrive.doSlash(entityIn,0F, 60.0F, 2.0F, 2156543, 1.0F))
+                                    .put(21, (entityIn) -> Experdrive.doSlash(entityIn,0F, 60.0F, 2.0F, 2156543, 1.0F))
+                                    .put(23, (entityIn) -> Experdrive.doSlash(entityIn,0F, 60.0F, 2.0F, 2156543, 1.0F))
+                                    .put(25, (entityIn) -> Experdrive.doSlash(entityIn,0F, 60.0F, 2.0F, 2156543, 1.0F))
+                                    .put(27, (entityIn) -> Experdrive.doSlash(entityIn,0F, 60.0F, 2.0F, 2156543, 1.0F))
                                     .build())
                             .addHitEffect(StunManager::setStun)
                             ::build
@@ -575,6 +596,12 @@ public class PLComboRegsitry {
                             .nextOfTimeout(entity -> Primeval.prefix("all_reuse"))//收刀
                             .addTickAction(ComboState.TimeLineTickAction.getBuilder()
                                     .put(1, (entityIn) -> SanZhu.doSlash(entityIn, false, 4, 1f))
+                                    .put(25, (entityIn) -> {
+                                        // 播放烈焰人被攻击的音效
+                                        entityIn.level().playSound(null, entityIn.getX(), entityIn.getY(), entityIn.getZ(),
+                                                net.minecraft.sounds.SoundEvents.BLAZE_HURT,
+                                                net.minecraft.sounds.SoundSource.PLAYERS,
+                                                1.0F, 1.0F);})
                                     .build())
                             .addHitEffect(StunManager::setStun)
                             ::build

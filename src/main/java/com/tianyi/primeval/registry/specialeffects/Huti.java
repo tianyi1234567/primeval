@@ -3,6 +3,7 @@ package com.tianyi.primeval.registry.specialeffects;
 import com.tianyi.primeval.registry.PLSpecialEffectsRegistry;
 import com.tianyi.primeval.specialattacks.*;
 import com.tianyi.primeval.specialattacks.Drive.CEO;
+import com.tianyi.primeval.specialattacks.Drive.Experdrive;
 import com.tianyi.primeval.specialattacks.swrod.*;
 import mods.flammpfeil.slashblade.capability.slashblade.ISlashBladeState;
 import mods.flammpfeil.slashblade.event.SlashBladeEvent;
@@ -44,7 +45,7 @@ public class Huti extends SpecialEffect {
 //                if (random.nextInt(100) >= 80) {
 //                    SwordRainSOM.doSlash(player, false, 15, 1f);
 //                }
-                    CEO.doSlash(player, false, 0.5, 1f);
+                Experdrive.doSlash(player,0F, 60.0F, 2.0F, 2156543, 1.0F);
                 }
             }
         }

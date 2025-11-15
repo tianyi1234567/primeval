@@ -1,4 +1,4 @@
-// 1.20.1	2025-08-16T18:01:09.9111606	Registries
+// 1.20.1	2025-10-20T14:14:43.3318483	Registries
 64b2aa3e71fa06ecfa8008a9a0f258cc00e6cfa0 data/primeval/slashblade/named_blades/bailou.json
 920fb48272371e93fc558aacb776bae4e12ae797 data/primeval/slashblade/named_blades/bailouex.json
 55ccc31c1a2a015f17e6e7244448b4bcc2e93a33 data/primeval/slashblade/named_blades/big_wind.json
@@ -8,7 +8,7 @@
 a90c56725d71dc547f47689f147d252e3e8b8c94 data/primeval/slashblade/named_blades/day.json
 f66162ec2417e17f237ce6dc1933bc9a65135f8a data/primeval/slashblade/named_blades/derive.json
 348a194f4bc2a038480dd966d85deca9b48820ff data/primeval/slashblade/named_blades/dignity.json
-ab8fffb7eeeb541b6f3fb2025f3e3e9555f85940 data/primeval/slashblade/named_blades/hongy.json
+367b9e55b0ba19fc4d816377535872d62c8af3f7 data/primeval/slashblade/named_blades/hongy.json
 7ad21168f2434d2e5f21246ede22fe08c9615143 data/primeval/slashblade/named_blades/huangwu.json
 704e7472e00edf0be2a619867ef8a6bb9e7ea290 data/primeval/slashblade/named_blades/huazhiwu.json
 89ff9be7d51bb76512965eedc6ba1acd09cbe187 data/primeval/slashblade/named_blades/jinan.json
@@ -24,7 +24,7 @@ aeb59e81c7971cba3fa5cedaca72c60a8de16b5a data/primeval/slashblade/named_blades/r
 a2651af40836480aeeb0ef39d87c871885a92550 data/primeval/slashblade/named_blades/rule.json
 1a7652a8dada4417adbcd0ccee8cc1e9d9a34478 data/primeval/slashblade/named_blades/sakura_dance.json
 b42d269ed6904ac63dbf8153ba9e2bbdfe106939 data/primeval/slashblade/named_blades/shiyuan.json
-e1b809dbb4a80c46d19ca2e16b2373498deee388 data/primeval/slashblade/named_blades/shiyuanex.json
+da5ee9c4668c7a900e001664f1f3d58506a112d9 data/primeval/slashblade/named_blades/shiyuanex.json
 f2ae89b1ca61456e14867519436450f1b6d8ab6a data/primeval/slashblade/named_blades/significance.json
 08b76b98ea3eb1a25bdf146af3ccd8cecdcd090d data/primeval/slashblade/named_blades/speak.json
 56fca749735e5c410ee311f9840e4acd45d6892c data/primeval/slashblade/named_blades/strong_wind.json
@@ -34,8 +34,8 @@ dc824f8b92d11b389dba4ce553fcdd80c8cf17e2 data/primeval/slashblade/named_blades/t
 e5c9de0618bc122ed4566f16c1156076c66f1aa0 data/primeval/slashblade/named_blades/void.json
 c0ced04ea619b648c47cafe553027850fb8dfd0a data/primeval/slashblade/named_blades/weaterk.json
 0e7fa43a187c8fb53c8501e0f6f33b274ba7ba88 data/primeval/slashblade/named_blades/xuancai.json
-98b5bc050828495ed0996b9e1e703ce08a2fe5ca data/primeval/slashblade/named_blades/xuese.json
+77f8a0141e720be7c907cb943b02a4aac12a90cc data/primeval/slashblade/named_blades/xuese.json
 3386e6f1ec9a1043ed2beb9f5540f770514c2e54 data/primeval/slashblade/named_blades/yang.json
 67463255f1c354da70e6026eef9ecf69c36084f4 data/primeval/slashblade/named_blades/yin.json
-c47e49469a3a72848cda072f81699ee238a87d9c data/primeval/slashblade/named_blades/yinyang.json
+08e69358f622d0f43ef8ec5b3e6a8626ae62779d data/primeval/slashblade/named_blades/yinyang.json
 224145412c0481d530333e1d884607c395272b2d data/primeval/slashblade/named_blades/zhejian.json

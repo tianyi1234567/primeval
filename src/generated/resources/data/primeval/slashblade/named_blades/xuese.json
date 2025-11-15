@@ -23,7 +23,7 @@
   ],
   "name": "primeval:xuese",
   "properties": {
-    "attack_base": 25.0,
+    "attack_base": 24.0,
     "max_damage": 10000,
     "slash_art": "primeval:xueyu",
     "special_effects": [

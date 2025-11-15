@@ -19,16 +19,13 @@ import net.minecraft.world.phys.AABB;
 import net.minecraft.world.phys.Vec3;
 import net.minecraftforge.network.PlayMessages;
 
-import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.List;
-import java.util.UUID;
+import java.util.*;
 
 public class AreaAttackEnity extends BaseTickProjectile {
-    public static AreaAttackEnity createInstance(PlayMessages.SpawnEntity packet, Level worldIn)
-    {
+    public static AreaAttackEnity createInstance(PlayMessages.SpawnEntity packet, Level worldIn) {
         return new AreaAttackEnity(PLEntiteRegristrys.aata, worldIn);
     }
+
     public List<UUID> isAttack = new ArrayList<>();
 
     public AreaAttackEnity(EntityType<? extends Projectile> p_37248_, Level p_37249_) {
@@ -39,25 +36,28 @@ public class AreaAttackEnity extends BaseTickProjectile {
     }
 
     //AreaAttack
-    public double getAttackRange(){
+    public double getAttackRange() {
         return Mth.clamp(0, 5.0 * getTick() / (getTick() + 5), 5);
     }
+
     @Override
     public void tick() {
         double attackRange = getAttackRange();
-        if (attackRange>4.5)this.discard();
+        if (attackRange > 4.5) this.discard();
         {
-            if (getOwner()==null)return;
-            final Vec3 _center = new Vec3(this.getX(), this.getY()+0.2, this.getZ());
-            List<Entity> _entfound = this.level().getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(getAttackRange()*1.1f), a -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
+            if (getOwner() == null) return;
+            final Vec3 _center = new Vec3(this.getX(), this.getY() + 0.2, this.getZ());
+            List<Entity> _entfound = this.level().getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(getAttackRange() * 1.1f), a -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
             for (Entity entityiterator : _entfound) {
-                if (isAttack.contains(entityiterator.getUUID()))continue;
-                if (entityiterator != this.getOwner()||entityiterator!=this) {
+                // 添加对玩家的检查，避免对玩家造成伤害
+                if (isAttack.contains(entityiterator.getUUID()) || entityiterator instanceof net.minecraft.world.entity.player.Player)
+                    continue;
+                if (entityiterator != this.getOwner() || entityiterator != this) {
                     if (entityiterator instanceof LivingEntity) {
                         isAttack.add(entityiterator.getUUID());
                         entityiterator.invulnerableTime = 0;
                         ((LivingEntity) entityiterator).addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 20, 1, (false), (false)));
-                        entityiterator.hurt(new DamageSource(this.level().registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.MAGIC), this,this.getOwner()), (float) (Math.pow((float) ((LivingEntity)this.getOwner()).getAttribute(Attributes.ATTACK_DAMAGE).getValue(),1.1f)*5f));
+                        entityiterator.hurt(new DamageSource(this.level().registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.MAGIC), this, this.getOwner()), (float) (Math.pow((float) ((LivingEntity) this.getOwner()).getAttribute(Attributes.ATTACK_DAMAGE).getValue(), 1.1f) * 5f));
                     }
                 }
             }

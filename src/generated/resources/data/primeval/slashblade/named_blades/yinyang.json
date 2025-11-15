@@ -27,7 +27,7 @@
   ],
   "name": "primeval:yinyang",
   "properties": {
-    "attack_base": 34.0,
+    "attack_base": 40.0,
     "max_damage": 9898,
     "slash_art": "primeval:ertian",
     "special_effects": [
