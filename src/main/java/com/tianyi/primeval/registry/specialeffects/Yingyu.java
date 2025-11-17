@@ -31,7 +31,7 @@ public class Yingyu extends SpecialEffect {
             RandomSource random = player.getRandom();
             int level = player.experienceLevel;
             if (SpecialEffect.isEffective(PLSpecialEffectsRegistry.YINGYU.get(), level)) {
-                if (random.nextInt(100) >= 50) {
+                if (random.nextInt(100) >= 65) {
                     for (BaseSwordRainEntity swordRain : SwordRainGenerator.generateFivePointSwordRain(event.getUser(), event.getUser().level(), 5)) {
                         swordRain.setDelay(random.nextInt(20));//延迟释放的时间
                     }

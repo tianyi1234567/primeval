@@ -51,7 +51,7 @@ public class Yuangaung extends SpecialEffect {
                 persistentData.putLong("Yuangaung_LastTrigger", currentTime);
 
                 // 执行技能效果
-                TheBrokenSword.doSlash(player, 12f, 1.6f);
+                TheBrokenSword.doSlash(player, 0f, 1.6f);
             }
         }
     }

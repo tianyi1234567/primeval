@@ -551,7 +551,7 @@ public class PLComboRegsitry {
                             .put(12, (entityIn) -> SlashEffect.SakuraEnd.doSlash(entityIn, 145F, Vec3.ZERO, false, false, 1F))
                             .put(13, (entityIn) -> SuperDV.doSlash(entityIn, 145F, 120, Vec3.ZERO, false, 3, 0.01f))
                             .put(15, (entityIn) -> {
-                                // 播放烈焰人被攻击的音效
+                                // 播放烈焰人被攻击的音效（因为我懒得注册新的音效了）
                                 entityIn.level().playSound(null, entityIn.getX(), entityIn.getY(), entityIn.getZ(),
                                         net.minecraft.sounds.SoundEvents.BLAZE_HURT,
                                         net.minecraft.sounds.SoundSource.PLAYERS,
@@ -597,7 +597,7 @@ public class PLComboRegsitry {
                             .addTickAction(ComboState.TimeLineTickAction.getBuilder()
                                     .put(1, (entityIn) -> SanZhu.doSlash(entityIn, false, 4, 1f))
                                     .put(25, (entityIn) -> {
-                                        // 播放烈焰人被攻击的音效
+                                        // 播放音效
                                         entityIn.level().playSound(null, entityIn.getX(), entityIn.getY(), entityIn.getZ(),
                                                 net.minecraft.sounds.SoundEvents.BLAZE_HURT,
                                                 net.minecraft.sounds.SoundSource.PLAYERS,

@@ -111,29 +111,8 @@ public class TheBreakSwordPlus extends EntityAbstractSummonedSword {
     }
 
     private void hitCheck() {
-        Vec3 positionVec = this.position();
-        Vec3 dirVec = this.getViewVector(1.0F);
-        EntityHitResult raytraceresult = null;
-        EntityHitResult entityraytraceresult = this.getRayTrace(positionVec, dirVec);
-        if (entityraytraceresult != null) {
-            raytraceresult = entityraytraceresult;
-        }
-
-        if (raytraceresult != null && raytraceresult.getType() == HitResult.Type.ENTITY) {
-            Entity entity = raytraceresult.getEntity();
-            Entity entity1 = this.getShooter();
-            if (entity instanceof Player && entity1 instanceof Player && !((Player)entity1).canHarmPlayer((Player)entity)) {
-                raytraceresult = null;
-                EntityHitResult var7 = null;
-            }
-        }
-
-        if (raytraceresult != null && raytraceresult.getType() == HitResult.Type.ENTITY && !ForgeEventFactory.onProjectileImpact(this, raytraceresult)) {
-            this.onHit(raytraceresult);
-            this.resetAlreadyHits();
-            this.hasImpulse = true;
-        }
-
+        // 碰撞逻辑，因为是光环所以用不着写这个......
+        return;
     }
 
     private void faceEntityStandby() {
@@ -155,14 +134,8 @@ public class TheBreakSwordPlus extends EntityAbstractSummonedSword {
     }
 
     protected void onHitEntity(EntityHitResult entityHitResult) {
-       // if (isInFormation) return; // 剑阵阶段不造成伤害
-        Entity targetEntity = entityHitResult.getEntity();
-        if (targetEntity instanceof LivingEntity) {
-            KnockBacks.toss.action.accept((LivingEntity)targetEntity);
-            StunManager.setStun((LivingEntity)targetEntity);
-        }
-
-        super.onHitEntity(entityHitResult);
+        // 实体逻辑，删掉！
+        return;
     }
 
     protected void onHitBlock(BlockHitResult blockraytraceresult) {

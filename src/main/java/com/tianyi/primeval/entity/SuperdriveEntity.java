@@ -52,8 +52,8 @@ public class SuperdriveEntity extends EntityDrive {
         this.entityData.define(OFFSET, Vec3.ZERO.toVector3f());
     }
     @Override
-    public void tick() {
-        // 在第一次tick时将实体定位到玩家前方10格处
+    public void tick() {//虽然可以使用原版的实体类，但我懒得改了，能跑起来就行
+        // 在第一次tick时将实体定位到玩家前方
         if (!positioned && this.getOwner() != null) {
             Entity owner = this.getOwner();
             // 获取玩家的朝向
@@ -104,11 +104,13 @@ public class SuperdriveEntity extends EntityDrive {
     private void dealDamageToNearbyEntities() {
         // 获取附近的实体（X格范围）
         AABB boundingBox = this.getBoundingBox().inflate(30.0D);
-        java.util.List<LivingEntity> entities = this.level().getEntitiesOfClass(LivingEntity.class, boundingBox, entity -> !(entity instanceof Player));
+        java.util.List<LivingEntity> entities = this.level().getEntitiesOfClass(LivingEntity.class, boundingBox,
+                entity -> !(entity instanceof Player) && entity != this.getOwner());
 
-        // 对每个实体造成X点魔法伤害
+        //对每个实体造成魔法伤害（虽然实际上是物理伤害来源）
         for (LivingEntity entity : entities) {
-            if (entity != this.getOwner()) { // 不伤害拥有者
+            //检查，确保不是玩家
+            if (!(entity instanceof Player)) {
                 // 重置无敌时间，使伤害无视无敌帧
                 entity.invulnerableTime = 0;
                 // 使用正确的玩家伤害来源实现
