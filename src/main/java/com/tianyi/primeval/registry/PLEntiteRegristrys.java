@@ -3,6 +3,7 @@ package com.tianyi.primeval.registry;
 import com.google.common.base.CaseFormat;
 import com.tianyi.primeval.Primeval;
 import com.tianyi.primeval.entity.*;
+import com.tianyi.primeval.entity.HuanyingEnity.HuanyingEnity;
 import com.tianyi.primeval.entity.xeper.ExperDriveEntity;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.Entity;
@@ -86,6 +87,9 @@ public class PLEntiteRegristrys {
     public static final ResourceLocation EXPERDrive = new ResourceLocation(MODID,
             classToString(ExperDriveEntity.class));
     public static EntityType<ExperDriveEntity> ExperDrive;
+    public static final ResourceLocation HUANYING = new ResourceLocation(MODID,
+            classToString(HuanyingEnity.class));
+    public static EntityType<HuanyingEnity> Huanying;
 
 
     public static void register(RegisterEvent event) {
@@ -271,6 +275,14 @@ public class PLEntiteRegristrys {
                         .sized(0.5f, 0.5f).setTrackingRange(4).setUpdateInterval(20)
                         .setCustomClientFactory(ExperDriveEntity::createInstance).build(EXPERDrive.toString());
                 helper.register(EXPERDrive, entity);
+            }
+        });
+        event.register(ForgeRegistries.Keys.ENTITY_TYPES, helper -> {
+            {
+                EntityType <HuanyingEnity> entity = Huanying = EntityType.Builder.of(HuanyingEnity::new, MobCategory.MISC)
+                        .sized(0.5f, 0.5f).setTrackingRange(4).setUpdateInterval(20)
+                        .setCustomClientFactory(HuanyingEnity::createInstance).build(HUANYING.toString());
+                helper.register(HUANYING, entity);
             }
         });
     }

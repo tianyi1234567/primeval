@@ -44,7 +44,7 @@ public class YingYu
                 // force riding
                 ss.startRiding(playerIn, true);
 
-                ss.setDelay(3 + i);
+                ss.setDelay(4 + i);
 
                 boolean isRight = ss.getDelay() % 2 == 0;
                 RandomSource random = worldIn.getRandom();

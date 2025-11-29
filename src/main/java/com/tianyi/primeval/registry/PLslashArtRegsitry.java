@@ -35,6 +35,8 @@ public class PLslashArtRegsitry {//sa注册
     public static final RegistryObject<SlashArts> BREAK_SKY;
     public static final RegistryObject<SlashArts> PXKKL;
     public static final RegistryObject<SlashArts> SANZHZHU;
+    public static final RegistryObject<SlashArts> DAZHOU;
+    public static final RegistryObject<SlashArts> DAZHOUYE;
 
     static {
         BIG_DRIVE=SLASH_ARTS.register("big_drive",()->new SlashArts((e)->PLComboRegsitry.BIGDRIVE_VERTICAL.getId()));//命名需要puliic相同
@@ -63,5 +65,7 @@ public class PLslashArtRegsitry {//sa注册
         BREAK_SKY=SLASH_ARTS.register("break_sky",()->new SlashArts((e)->PLComboRegsitry.BREAK_SKY.getId()));
         PXKKL=SLASH_ARTS.register("pxkkl",()->new SlashArts((e)->PLComboRegsitry.PXKKL.getId()));
         SANZHZHU=SLASH_ARTS.register("sanzhzhu",()->new SlashArts((e)->PLComboRegsitry.SANZHZHU.getId()));
+        DAZHOU=SLASH_ARTS.register("duandai_zhou",()->new SlashArts((e)->PLComboRegsitry.DAZHOU.getId()));
+        DAZHOUYE=SLASH_ARTS.register("duandai_ye",()->new SlashArts((e)->PLComboRegsitry.DAZHOUYE.getId()));
     }
 }

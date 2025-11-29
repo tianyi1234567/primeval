@@ -39,6 +39,7 @@
   "item.primeval.bailouex": "§b至原刀§b§b「白楼千变」§b",
   "item.primeval.louguanex": "§b至原刀§b§d「楼观千变」§d",
   "item.primeval.pyqg": "§f「§b始§f·§e源§f」",
+  "item.primeval.duandai": "§b原初§b§e「§f日§e·§0夜§e之光-绸缎」§e",
 
   "slash_art.primeval.big_drive": "§e奇迹连斩§e",
   "slash_art.primeval.wind_is_blowing": "§e风起兮§e",
@@ -64,7 +65,8 @@
   "slash_art.primeval.dpro": "§8恶之荆棘§8",
   "slash_art.primeval.sanzhzhu": "§8辟夜§f·§e求光",
   "slash_art.primeval.break_sky": "§e始§e源§f·§b若将一切化作尘土",
-
+  "slash_art.primeval.duandai_zhou": "§e璀璨，于世间闪耀！·昼",
+  "slash_art.primeval.duandai_ye": "§8幻想，终将归落幕！·夜",
 
   "se.primeval.primevalt": "§e原初·奇迹§e",
   "se.primeval.promevalty": "§e神迹显现§e",
@@ -88,6 +90,8 @@
   "se.primeval.huti": "§e-尘归尘-",
   "se.primeval.tuguitu": "§b-土归土-",
   "se.primeval.yuangaung": "-至·初-",
+  "se.primeval.duanzhou": "§e日·光辉色彩照满大地",
+  "se.primeval.duanye": "§8夜·铭记于大地的狂欢",
 
   "se.primeval.zhongyan": "§4炼狱觉醒·终焉樱",
 
@@ -113,6 +117,8 @@
   "primeval_se_tooltip_huti": "§e每次攻击都会触发以下任意一种效果（内置1秒触发cd）\n§e效果A：在敌人头顶召唤4支幻影剑攻击敌人\n§e效果B：在敌人周围召唤5支幻影剑短暂延迟后攻击敌人\n§e效果C：召唤4支幻影剑追踪玩家周围最近的敌人",
   "primeval_se_tooltip_tuguitu": "§b每次攻击都会在敌人身边召唤一道幻影裂隙攻击敌人\n§b幻影裂隙：每次出现对周围（4*4范围）造成一次基于玩家最大生命值*2的伤害",
   "primeval_se_tooltip_yuangaung": "§b在玩家身后召唤一道起源神性于身后，提供大量增益buff，对于拥有此效果的玩家，其周围的其他玩家也会享有增益buff",
+  "primeval_se_tooltip_duanzhou": "§e每次攻击都会触发“炫彩王冠”\n“炫彩王冠”：召唤一顶幻影王冠于头顶，自动攻击周围敌人，冷却0.5秒\n§b使用SA切换为“暗夜形态”获得全新机制与技能",
+  "primeval_se_tooltip_duanye": "§8每次攻击都会触发“夜色狂想”\n“夜色狂想”：每次攻击会触发三次高频追击，冷却0.5秒\n§b使用SA切换为“炫日形态”获得全新机制与技能",
   "primeval_se_tooltip_zhongyan": "§4炼狱觉醒·终焉樱",
 
   "enchantment.level.20": "§e「原初·无上利刃」§e",

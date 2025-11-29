@@ -18,15 +18,8 @@ import java.util.Random;
 public class Clweor extends SpecialEffect {
 
     public Clweor() {
-        super(0, false, false);
+        super(0, true, true);
     }
-
-    @Mod.EventBusSubscriber
-    public class RainBow extends SpecialEffect {
-        public RainBow() {
-            super(0, true, true);
-        }
-
         private static final Random r = new Random();
 
         @SubscribeEvent
@@ -46,4 +39,3 @@ public class Clweor extends SpecialEffect {
             }
         }
     }
-}

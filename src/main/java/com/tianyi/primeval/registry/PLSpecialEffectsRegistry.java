@@ -33,6 +33,9 @@ public class PLSpecialEffectsRegistry {
     public static final RegistryObject<SpecialEffect> YUANGUANG;
     public static final RegistryObject<SpecialEffect> KUNAN;
 
+    public static final RegistryObject<SpecialEffect> DUANZHOU;
+    public static final RegistryObject<SpecialEffect> DUANYE;
+
     public static final RegistryObject<SpecialEffect> ZHONGYAN;
 
     public PLSpecialEffectsRegistry() {
@@ -62,6 +65,8 @@ public class PLSpecialEffectsRegistry {
         TUGUITU= REGISTRY_KEY2.register("tuguitu", Tuguitu::new);
         YUANGUANG= REGISTRY_KEY2.register("yuangaung", Yuangaung::new);
         KUNAN= REGISTRY_KEY2.register("kunan", Kunan::new);
+        DUANZHOU= REGISTRY_KEY2.register("duanzhou", Duanzhou::new);
+        DUANYE= REGISTRY_KEY2.register("duanye", Duanye::new);
 
         ZHONGYAN= REGISTRY_KEY2.register("zhongyan", Zhongyan::new);
     }

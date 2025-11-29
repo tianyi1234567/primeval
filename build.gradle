@@ -168,7 +168,7 @@ dependencies {
 //开发环境jei
     implementation fg.deobf("curse.maven:jei-238222:6600311")
     //拔刀剑重锋依赖
-    implementation fg.deobf("curse.maven:slashblade-resharped-1022428:7194599")
+    implementation fg.deobf("curse.maven:slashblade-resharped-1022428:7234815")
     //暮色森林
     implementation fg.deobf("curse.maven:the-twilight-forest-227639:5468648")
     //curios
@@ -205,7 +205,9 @@ dependencies {
     //黑白狐
     implementation fg.deobf("curse.maven:foxbladeextrare-1350400:7087228")
     //传世遗产库前置
-    implementation fg.deobf("curse.maven:legendreliclib-1307366:7090301")
+    implementation fg.deobf("curse.maven:legendreliclib-1307366:7261830")
+    //nbt编辑器
+    implementation fg.deobf("curse.maven:ibe-editor-256822:4994072")
 
     annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
 }

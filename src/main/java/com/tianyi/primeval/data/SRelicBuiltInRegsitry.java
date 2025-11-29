@@ -99,6 +99,8 @@ public class SRelicBuiltInRegsitry {
     public static final ResourceKey<SlashBladeDefinition> VOIDEX =register("viodex");
     //源初
     public static final ResourceKey<SlashBladeDefinition> PYQG =register("pyqg");
+    //缎带
+    public static final ResourceKey<SlashBladeDefinition> DUANDAI =register("duandai");
     public static void registerAll(BootstapContext<SlashBladeDefinition> bootstrap) {
         //bootstrap.register(START,
         //        new SlashBladeDefinition(Srelic.prefix("none_blue"),
@@ -863,6 +865,25 @@ public class SRelicBuiltInRegsitry {
                                 new EnchantmentDefinition(getEnchantmentID(Enchantments.POWER_ARROWS), 10),
                                 new EnchantmentDefinition(getEnchantmentID(Enchantments.MOB_LOOTING), 10),
                                 new EnchantmentDefinition(getEnchantmentID(Enchantments.UNBREAKING), 10)
+                        )));
+        bootstrap.register(DUANDAI,
+                new SlashBladeDefinition(Primeval.prefix("duandai"),//NBT名称
+                        RenderDefinition.Builder.newInstance()
+                                .textureName(Primeval.prefix("model/tianyi/duandai_zhou.png"))//贴图地址
+                                .modelName(Primeval.prefix("model/tianyi/duandai.obj"))//模型地址
+                                .build(),
+                        PropertiesDefinition.Builder.newInstance()
+                                .baseAttackModifier(48)//伤害
+                                .defaultSwordType(List.of(SwordType.BEWITCHED))
+                                .slashArtsType(PLComboRegsitry.DAZHOU.getId())//SA
+                                .addSpecialEffect(PLSpecialEffectsRegistry.CLWEOR.getId())
+                                .addSpecialEffect(PLSpecialEffectsRegistry.DUANZHOU.getId())
+                                .maxDamage(10024)//耐久
+                                .build(),
+                        List.of(new EnchantmentDefinition(getEnchantmentID(Enchantments.SWEEPING_EDGE ), 3),
+                                new EnchantmentDefinition(getEnchantmentID(Enchantments.MENDING ), 5),
+                                new EnchantmentDefinition(getEnchantmentID(Enchantments.POWER_ARROWS ), 5),
+                                new EnchantmentDefinition(getEnchantmentID(Enchantments.MOB_LOOTING ), 3)
                         )));
     }
 

@@ -39,5 +39,6 @@ public class SrelicClient {
         event.registerEntityRenderer(PLEntiteRegristrys.ceo, DriveRenderer::new);
         event.registerEntityRenderer(PLEntiteRegristrys.supde, SuperdriveRenderer::new);
         event.registerEntityRenderer(PLEntiteRegristrys.ExperDrive, ExperDriveRender::new);
+        event.registerEntityRenderer(PLEntiteRegristrys.Huanying, HuanyingRender::new);
     }
 }

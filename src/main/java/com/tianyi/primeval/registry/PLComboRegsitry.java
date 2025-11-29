@@ -10,6 +10,7 @@ import com.tianyi.primeval.specialattacks.Drive.Blowing;
 import com.tianyi.primeval.specialattacks.Drive.Experdrive;
 import com.tianyi.primeval.specialattacks.Drive.SuperDV;
 import com.tianyi.primeval.specialattacks.swrod.*;
+import com.tianyi.primeval.util.Drivesul;
 import mods.flammpfeil.slashblade.SlashBlade;
 import mods.flammpfeil.slashblade.ability.StunManager;
 import mods.flammpfeil.slashblade.event.handler.FallHandler;
@@ -18,10 +19,13 @@ import mods.flammpfeil.slashblade.registry.combo.ComboState;
 import mods.flammpfeil.slashblade.slasharts.*;
 import mods.flammpfeil.slashblade.util.AttackManager;
 import com.tianyi.primeval.specialattacks.*;
+import com.tianyi.primeval.util.Slashtag;
 import mods.flammpfeil.slashblade.util.KnockBacks;
+import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.phys.Vec3;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
@@ -252,7 +256,7 @@ public class PLComboRegsitry {
                             .nextOfTimeout(entity -> Primeval.prefix("all_reuse"))//收刀或下一步动作
                             .addTickAction(ComboState.TimeLineTickAction.getBuilder()
                                     .put(1, (entityIn) -> SlashEffect.SakuraEnd.doSlash(entityIn, 90F, Vec3.ZERO, false, false, 0.15))
-                                    .put(2, (entityIn) -> YingYu.doSlash(entityIn, false, 3.0, 4F))
+                                    .put(2, (entityIn) -> YingYu.doSlash(entityIn, false, 4.0, 4F))
                                     .put(5, (entityIn) -> YingYu.doSlash(entityIn, false, 4.0, 4F))
                                     .put(9, (entityIn) -> YingYu.doSlash(entityIn, false, 4.0, 4F)).build())
                             .addHitEffect(StunManager::setStun)
@@ -602,6 +606,54 @@ public class PLComboRegsitry {
                                                 net.minecraft.sounds.SoundEvents.BLAZE_HURT,
                                                 net.minecraft.sounds.SoundSource.PLAYERS,
                                                 1.0F, 1.0F);})
+                                    .build())
+                            .addHitEffect(StunManager::setStun)
+                            ::build
+            );
+    public static final RegistryObject<ComboState> DAZHOU = COMBO_STATES.register//注册名
+            (
+                    "duandai_zhou",//名字
+                    ComboState.Builder.newInstance().startAndEnd(1600, 1659).priority(40)
+                            .motionLoc(DefaultResources.ExMotionLocation)
+                            .next(ComboState.TimeoutNext.buildFromFrame(10, entity -> SlashBlade.prefix("none")))
+                            .nextOfTimeout(entity -> Primeval.prefix("all_reuse"))//收刀
+                            .addTickAction(ComboState.TimeLineTickAction.getBuilder()
+                                    .put(1, (entityIn) -> SlashEffect.SakuraEnd.doSlash(entityIn, 0F, Vec3.ZERO, false, false, 1F))
+                                    .put(2, (entityIn) -> SlashEffect.SakuraEnd.doSlash(entityIn, 90F, Vec3.ZERO, false, false, 1F))
+                                    .put(3, (entityIn) -> Drivesul.HuanyingDrives(entityIn, 8, 4, 0, 35))
+                                    .put(4, (entityIn) -> {
+                                        if(entityIn instanceof Player player) {
+                                            // 使用Slashtag方法设置TextureName
+                                            Slashtag.setTextureName(player, "primeval:model/tianyi/duandai_ye.png");
+                                            // 使用Slashtag方法设置SpecialAttackType
+                                            Slashtag.setSpecialAttackType(player, "primeval:duandai_ye");
+                                            Slashtag.setSpecialEffects(player, "primeval:clweor,primeval:duanye");
+                                        }
+                                    })
+                                    .build())
+                            .addHitEffect(StunManager::setStun)
+                            ::build
+            );
+    public static final RegistryObject<ComboState> DAZHOUYE = COMBO_STATES.register//注册名
+            (
+                    "duandai_ye",//名字
+                    ComboState.Builder.newInstance().startAndEnd(1600, 1659).priority(40)
+                            .motionLoc(DefaultResources.ExMotionLocation)
+                            .next(ComboState.TimeoutNext.buildFromFrame(10, entity -> SlashBlade.prefix("none")))
+                            .nextOfTimeout(entity -> Primeval.prefix("all_reuse"))//收刀
+                            .addTickAction(ComboState.TimeLineTickAction.getBuilder()
+                                    .put(1, (entityIn) -> SlashEffect.SakuraEnd.doSlash(entityIn, 0F, Vec3.ZERO, false, false, 1F))
+                                    .put(2, (entityIn) -> SlashEffect.SakuraEnd.doSlash(entityIn, 90F, Vec3.ZERO, false, false, 1F))
+                                    .put(3, (entityIn) -> Drivesul.HuanyingDrives(entityIn, 8, 4, 0, 35))
+                                    .put(4, (entityIn) -> {
+                                        if(entityIn instanceof Player player) {
+                                            // 使用Slashtag方法设置TextureName
+                                            Slashtag.setTextureName(player, "primeval:model/tianyi/duandai_zhou.png");
+                                            // 使用Slashtag方法设置SpecialAttackType
+                                            Slashtag.setSpecialAttackType(player, "primeval:duandai_zhou");
+                                            Slashtag.setSpecialEffects(player, "primeval:clweor,primeval:duanzhou");
+                                        }
+                                    })
                                     .build())
                             .addHitEffect(StunManager::setStun)
                             ::build
