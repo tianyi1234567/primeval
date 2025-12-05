@@ -873,12 +873,12 @@ public class SRelicBuiltInRegsitry {
                                 .modelName(Primeval.prefix("model/tianyi/duandai.obj"))//模型地址
                                 .build(),
                         PropertiesDefinition.Builder.newInstance()
-                                .baseAttackModifier(48)//伤害
+                                .baseAttackModifier(41)//伤害
                                 .defaultSwordType(List.of(SwordType.BEWITCHED))
                                 .slashArtsType(PLComboRegsitry.DAZHOU.getId())//SA
                                 .addSpecialEffect(PLSpecialEffectsRegistry.CLWEOR.getId())
                                 .addSpecialEffect(PLSpecialEffectsRegistry.DUANZHOU.getId())
-                                .maxDamage(10024)//耐久
+                                .maxDamage(4024)//耐久
                                 .build(),
                         List.of(new EnchantmentDefinition(getEnchantmentID(Enchantments.SWEEPING_EDGE ), 3),
                                 new EnchantmentDefinition(getEnchantmentID(Enchantments.MENDING ), 5),

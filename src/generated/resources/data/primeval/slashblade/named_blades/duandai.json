@@ -19,8 +19,8 @@
   ],
   "name": "primeval:duandai",
   "properties": {
-    "attack_base": 48.0,
-    "max_damage": 10024,
+    "attack_base": 41.0,
+    "max_damage": 4024,
     "slash_art": "primeval:duandai_zhou",
     "special_effects": [
       "primeval:clweor",

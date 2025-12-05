@@ -55,16 +55,13 @@ public class Slashtag {
             return false;
         }
 
-        // 通过 Capability 修改数据，这才是真正的数据存储位置
         return stack.getCapability(ItemSlashBlade.BLADESTATE).map(state -> {
             if ("TextureName".equals(nbtKey)) {
                 state.setTexture(new ResourceLocation(value));
                 return true;
             } else if ("SpecialAttackType".equals(nbtKey)) {
-                // SpecialAttackType 需要直接修改 NBT（因为 Capability 不支持此操作）
                 return setNBTDirect(stack, nbtKey, value);
             }
-            // 对于其他键，暂不支持直接设置
             return false;
         }).orElse(false);
     }
@@ -161,27 +158,23 @@ public class Slashtag {
         if (stack.isEmpty()) {
             return false;
         }
-        
-        // 解析特效ID字符串（格式："primeval:effect1,primeval:effect2"）
+
         String[] effects = effectIds.split(",");
-        ListTag effectList = new ListTag();  // 特效存储为String类型的ListTag
+        ListTag effectList = new ListTag();
         
         for (String effect : effects) {
             String trimmedEffect = effect.trim();
             if (!trimmedEffect.isEmpty()) {
-                // 直接添加StringTag，不指定索引
                 effectList.add(net.minecraft.nbt.StringTag.valueOf(trimmedEffect));
             }
         }
-        
-        // 需要同时修改NBT中bladeState中SpecialEffects
+
         CompoundTag nbt = stack.getOrCreateTag();
         if (nbt.contains("bladeState") && nbt.get("bladeState") instanceof CompoundTag) {
             CompoundTag bladeState = nbt.getCompound("bladeState");
             bladeState.put("SpecialEffects", effectList);
         }
-        
-        // 同时设置Capability
+
         return stack.getCapability(ItemSlashBlade.BLADESTATE).map(state -> {
             state.setSpecialEffects(effectList);
             return true;

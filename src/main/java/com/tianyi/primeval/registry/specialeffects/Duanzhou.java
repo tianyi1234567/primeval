@@ -48,7 +48,7 @@ public class Duanzhou extends SpecialEffect {
             RandomSource random = player.getRandom();
             for (BaseSwordRainEntity swordRain : SwordRainul.generateDefensiveSwordRain(event.getUser(), event.getUser().level(), 6,3,5.5)) {
                 swordRain.setDelay(random.nextInt(35));
-                swordRain.setDamage(random.nextInt(25));
+                swordRain.setDamage(random.nextInt(31) + 45);
             }
         }
     }

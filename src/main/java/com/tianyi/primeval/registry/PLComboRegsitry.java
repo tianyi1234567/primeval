@@ -618,9 +618,9 @@ public class PLComboRegsitry {
                             .next(ComboState.TimeoutNext.buildFromFrame(10, entity -> SlashBlade.prefix("none")))
                             .nextOfTimeout(entity -> Primeval.prefix("all_reuse"))//收刀
                             .addTickAction(ComboState.TimeLineTickAction.getBuilder()
-                                    .put(1, (entityIn) -> SlashEffect.SakuraEnd.doSlash(entityIn, 0F, Vec3.ZERO, false, false, 1F))
+                                    .put(1, (entityIn) -> SlashEffect.SakuraEnd.doSlash(entityIn, 0F, Vec3.ZERO, false, false, 2F))
                                     .put(2, (entityIn) -> SlashEffect.SakuraEnd.doSlash(entityIn, 90F, Vec3.ZERO, false, false, 1F))
-                                    .put(3, (entityIn) -> Drivesul.HuanyingDrives(entityIn, 8, 4, 0, 35))
+                                    .put(3, (entityIn) -> Drivesul.HuanyingDrives(entityIn, 8, 6, 0, 35))
                                     .put(4, (entityIn) -> {
                                         if(entityIn instanceof Player player) {
                                             // 使用Slashtag方法设置TextureName
@@ -642,9 +642,9 @@ public class PLComboRegsitry {
                             .next(ComboState.TimeoutNext.buildFromFrame(10, entity -> SlashBlade.prefix("none")))
                             .nextOfTimeout(entity -> Primeval.prefix("all_reuse"))//收刀
                             .addTickAction(ComboState.TimeLineTickAction.getBuilder()
-                                    .put(1, (entityIn) -> SlashEffect.SakuraEnd.doSlash(entityIn, 0F, Vec3.ZERO, false, false, 1F))
+                                    .put(1, (entityIn) -> SlashEffect.SakuraEnd.doSlash(entityIn, 0F, Vec3.ZERO, false, false, 2F))
                                     .put(2, (entityIn) -> SlashEffect.SakuraEnd.doSlash(entityIn, 90F, Vec3.ZERO, false, false, 1F))
-                                    .put(3, (entityIn) -> Drivesul.HuanyingDrives(entityIn, 8, 4, 0, 35))
+                                    .put(3, (entityIn) -> Drivesul.HuanyingDrives(entityIn, 8, 6, 0, 35))
                                     .put(4, (entityIn) -> {
                                         if(entityIn instanceof Player player) {
                                             // 使用Slashtag方法设置TextureName

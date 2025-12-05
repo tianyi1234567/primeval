@@ -1,6 +1,7 @@
 package com.tianyi.primeval.registry.specialeffects;
 
 import com.dinzeer.legendreliclib.lib.compat.slashblade.entity.swordrain.BaseSwordRainEntity;
+import com.tianyi.primeval.cover.SlashEffect;
 import com.tianyi.primeval.registry.PLSpecialEffectsRegistry;
 import com.tianyi.primeval.util.Drivesul;
 import com.tianyi.primeval.util.SwordRainul;
@@ -10,6 +11,7 @@ import mods.flammpfeil.slashblade.registry.specialeffects.SpecialEffect;
 import mods.flammpfeil.slashblade.util.AttackManager;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.phys.Vec3;
 import net.minecraftforge.event.entity.living.LivingEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -37,7 +39,10 @@ public class Duanye extends SpecialEffect {
             Player player = (Player) event.getUser();
             java.util.UUID playerId = player.getUUID();
             long gameTime = player.level().getGameTime();
-            
+            int level = player.experienceLevel;
+            if (SpecialEffect.isEffective(PLSpecialEffectsRegistry.YINYANGJIAN.get(), level)) {//第一次刀光
+                SlashEffect.SakuraEnd.doSlash(player, event.getRoll() - 90F, Vec3.ZERO, false, false, 0.7);
+            }
             // 检查冷却期
             if (EFFECT_COOLDOWN.containsKey(playerId)) {
                 long lastTrigger = EFFECT_COOLDOWN.get(playerId);
@@ -78,7 +83,7 @@ public class Duanye extends SpecialEffect {
                         AttackManager.genRushOffset(player),
                         false,
                         false,
-                        0.7
+                        0.7F
                     );
                     
                     ATTACK_COUNT.put(playerId, currentCount + 1);

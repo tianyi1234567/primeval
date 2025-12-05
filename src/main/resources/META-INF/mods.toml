@@ -3,7 +3,7 @@ loaderVersion="${loader_version_range}" #mandatory This is typically bumped ever
 license="${mod_license}"
 [[mods]]
 modId="primeval"
-version="1.3.0"
+version="1.3.5"
 displayName="primeval"
 authors="tianyi"
 description='''Some new knives'''
